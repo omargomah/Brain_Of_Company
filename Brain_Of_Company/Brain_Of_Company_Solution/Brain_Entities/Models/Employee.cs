@@ -15,6 +15,7 @@ namespace Brain_Entities.Models
         public string Name { get; set; }
         public DateTime DateOfBirth { get; set; } // Date of Birth
         public DateTime DateOfHiring { get; set; } // Date of Hire
+        public DateTime DateOfFiring { get; set; } // Date of Hire
         public decimal SalaryPerDay { get; set; }
         public bool IsDeleted { get; set; }
         public string Phone { get; set; }
