@@ -1,0 +1,190 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Brain_company_project\\Brain_Of_Company_Solution\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{96B5D952-4C55-4084-B62D-C216379151D4}|Brain_DAL\\Brain_DAL.csproj|d:\\brain_company_project\\brain_of_company_solution\\brain_dal\\brain_dal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{96B5D952-4C55-4084-B62D-C216379151D4}|Brain_DAL\\Brain_DAL.csproj|solutionrelative:brain_dal\\brain_dal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96B5D952-4C55-4084-B62D-C216379151D4}|Brain_DAL\\Brain_DAL.csproj|d:\\brain_company_project\\brain_of_company_solution\\brain_dal\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96B5D952-4C55-4084-B62D-C216379151D4}|Brain_DAL\\Brain_DAL.csproj|solutionrelative:brain_dal\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96B5D952-4C55-4084-B62D-C216379151D4}|Brain_DAL\\Brain_DAL.csproj|d:\\brain_company_project\\brain_of_company_solution\\brain_dal\\data\\configure\\employeeconfigure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96B5D952-4C55-4084-B62D-C216379151D4}|Brain_DAL\\Brain_DAL.csproj|solutionrelative:brain_dal\\data\\configure\\employeeconfigure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFE59BA5-DD33-4E81-A53F-B398144165D2}|Brain_Entities\\Brain_Entities.csproj|d:\\brain_company_project\\brain_of_company_solution\\brain_entities\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFE59BA5-DD33-4E81-A53F-B398144165D2}|Brain_Entities\\Brain_Entities.csproj|solutionrelative:brain_entities\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFE59BA5-DD33-4E81-A53F-B398144165D2}|Brain_Entities\\Brain_Entities.csproj|d:\\brain_company_project\\brain_of_company_solution\\brain_entities\\models\\attendance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFE59BA5-DD33-4E81-A53F-B398144165D2}|Brain_Entities\\Brain_Entities.csproj|solutionrelative:brain_entities\\models\\attendance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFE59BA5-DD33-4E81-A53F-B398144165D2}|Brain_Entities\\Brain_Entities.csproj|d:\\brain_company_project\\brain_of_company_solution\\brain_entities\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFE59BA5-DD33-4E81-A53F-B398144165D2}|Brain_Entities\\Brain_Entities.csproj|solutionrelative:brain_entities\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFE59BA5-DD33-4E81-A53F-B398144165D2}|Brain_Entities\\Brain_Entities.csproj|d:\\brain_company_project\\brain_of_company_solution\\brain_entities\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFE59BA5-DD33-4E81-A53F-B398144165D2}|Brain_Entities\\Brain_Entities.csproj|solutionrelative:brain_entities\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFE59BA5-DD33-4E81-A53F-B398144165D2}|Brain_Entities\\Brain_Entities.csproj|d:\\brain_company_project\\brain_of_company_solution\\brain_entities\\models\\invoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFE59BA5-DD33-4E81-A53F-B398144165D2}|Brain_Entities\\Brain_Entities.csproj|solutionrelative:brain_entities\\models\\invoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFE59BA5-DD33-4E81-A53F-B398144165D2}|Brain_Entities\\Brain_Entities.csproj|d:\\brain_company_project\\brain_of_company_solution\\brain_entities\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFE59BA5-DD33-4E81-A53F-B398144165D2}|Brain_Entities\\Brain_Entities.csproj|solutionrelative:brain_entities\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFE59BA5-DD33-4E81-A53F-B398144165D2}|Brain_Entities\\Brain_Entities.csproj|d:\\brain_company_project\\brain_of_company_solution\\brain_entities\\models\\dependent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFE59BA5-DD33-4E81-A53F-B398144165D2}|Brain_Entities\\Brain_Entities.csproj|solutionrelative:brain_entities\\models\\dependent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EmployeeConfigure.cs",
+              "DocumentMoniker": "D:\\Brain_company_project\\Brain_Of_Company_Solution\\Brain_DAL\\Data\\configure\\EmployeeConfigure.cs",
+              "RelativeDocumentMoniker": "Brain_DAL\\Data\\configure\\EmployeeConfigure.cs",
+              "ToolTip": "D:\\Brain_company_project\\Brain_Of_Company_Solution\\Brain_DAL\\Data\\configure\\EmployeeConfigure.cs",
+              "RelativeToolTip": "Brain_DAL\\Data\\configure\\EmployeeConfigure.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAowBsAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T18:47:06.986Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AppDBContext.cs",
+              "DocumentMoniker": "D:\\Brain_company_project\\Brain_Of_Company_Solution\\Brain_DAL\\Data\\AppDBContext.cs",
+              "RelativeDocumentMoniker": "Brain_DAL\\Data\\AppDBContext.cs",
+              "ToolTip": "D:\\Brain_company_project\\Brain_Of_Company_Solution\\Brain_DAL\\Data\\AppDBContext.cs",
+              "RelativeToolTip": "Brain_DAL\\Data\\AppDBContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T18:39:12.286Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Brain_DAL",
+              "DocumentMoniker": "D:\\Brain_company_project\\Brain_Of_Company_Solution\\Brain_DAL\\Brain_DAL.csproj",
+              "RelativeDocumentMoniker": "Brain_DAL\\Brain_DAL.csproj",
+              "ToolTip": "D:\\Brain_company_project\\Brain_Of_Company_Solution\\Brain_DAL\\Brain_DAL.csproj",
+              "RelativeToolTip": "Brain_DAL\\Brain_DAL.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-01-27T18:33:24.874Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Dependent.cs",
+              "DocumentMoniker": "D:\\Brain_company_project\\Brain_Of_Company_Solution\\Brain_Entities\\Models\\Dependent.cs",
+              "RelativeDocumentMoniker": "Brain_Entities\\Models\\Dependent.cs",
+              "ToolTip": "D:\\Brain_company_project\\Brain_Of_Company_Solution\\Brain_Entities\\Models\\Dependent.cs",
+              "RelativeToolTip": "Brain_Entities\\Models\\Dependent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T18:26:25Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Category.cs",
+              "DocumentMoniker": "D:\\Brain_company_project\\Brain_Of_Company_Solution\\Brain_Entities\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "Brain_Entities\\Models\\Category.cs",
+              "ToolTip": "D:\\Brain_company_project\\Brain_Of_Company_Solution\\Brain_Entities\\Models\\Category.cs",
+              "RelativeToolTip": "Brain_Entities\\Models\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T18:22:53.21Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Invoice.cs",
+              "DocumentMoniker": "D:\\Brain_company_project\\Brain_Of_Company_Solution\\Brain_Entities\\Models\\Invoice.cs",
+              "RelativeDocumentMoniker": "Brain_Entities\\Models\\Invoice.cs",
+              "ToolTip": "D:\\Brain_company_project\\Brain_Of_Company_Solution\\Brain_Entities\\Models\\Invoice.cs",
+              "RelativeToolTip": "Brain_Entities\\Models\\Invoice.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T18:20:37.77Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Department.cs",
+              "DocumentMoniker": "D:\\Brain_company_project\\Brain_Of_Company_Solution\\Brain_Entities\\Models\\Department.cs",
+              "RelativeDocumentMoniker": "Brain_Entities\\Models\\Department.cs",
+              "ToolTip": "D:\\Brain_company_project\\Brain_Of_Company_Solution\\Brain_Entities\\Models\\Department.cs",
+              "RelativeToolTip": "Brain_Entities\\Models\\Department.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAkwAgAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T18:18:26.595Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\Brain_company_project\\Brain_Of_Company_Solution\\Brain_Entities\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "Brain_Entities\\Models\\Product.cs",
+              "ToolTip": "D:\\Brain_company_project\\Brain_Of_Company_Solution\\Brain_Entities\\Models\\Product.cs",
+              "RelativeToolTip": "Brain_Entities\\Models\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T18:12:59.406Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Attendance.cs",
+              "DocumentMoniker": "D:\\Brain_company_project\\Brain_Of_Company_Solution\\Brain_Entities\\Models\\Attendance.cs",
+              "RelativeDocumentMoniker": "Brain_Entities\\Models\\Attendance.cs",
+              "ToolTip": "D:\\Brain_company_project\\Brain_Of_Company_Solution\\Brain_Entities\\Models\\Attendance.cs",
+              "RelativeToolTip": "Brain_Entities\\Models\\Attendance.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T18:08:58.919Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "D:\\Brain_company_project\\Brain_Of_Company_Solution\\Brain_Entities\\Models\\Employee.cs",
+              "RelativeDocumentMoniker": "Brain_Entities\\Models\\Employee.cs",
+              "ToolTip": "D:\\Brain_company_project\\Brain_Of_Company_Solution\\Brain_Entities\\Models\\Employee.cs",
+              "RelativeToolTip": "Brain_Entities\\Models\\Employee.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwAoAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T18:02:53.66Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

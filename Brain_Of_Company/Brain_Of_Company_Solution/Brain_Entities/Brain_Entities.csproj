@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="interfaces\IRepository.cs" />
+    <Compile Remove="interfaces\IUnitOfWork.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="interfaces\IRepository.cs" />
+    <None Include="interfaces\IUnitOfWork.cs" />
+  </ItemGroup>
+
+</Project>
