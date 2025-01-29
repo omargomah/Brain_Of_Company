@@ -1,4 +1,8 @@
 
+using Microsoft.EntityFrameworkCore;
+using System;
+using Brain_DAL.Data;
+
 namespace Brain_API
 {
     public class Program
@@ -8,6 +12,8 @@ namespace Brain_API
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
+            var con = builder.Configuration.GetConnectionString("con");
+            builder.Services.AddDbContext<AppDBContext>(options => options.UseSqlServer(con));
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

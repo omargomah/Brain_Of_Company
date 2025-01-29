@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Brain_Entities")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ddf81053c6c1d8c4838eb3cc564df6e4e7e5f2e7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3fd9f1c34b7b73c5a5dde099112c69e1cd180825")]
 [assembly: System.Reflection.AssemblyProductAttribute("Brain_Entities")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Brain_Entities")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
