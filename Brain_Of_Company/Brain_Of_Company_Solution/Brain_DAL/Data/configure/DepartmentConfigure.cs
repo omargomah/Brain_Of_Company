@@ -12,7 +12,7 @@ namespace Brain_DAL.Data.configure
                 builder.Property(x => x.Id).HasColumnName("Id").HasColumnType("int").IsRequired(true);
                 builder.Property(x => x.Name).HasColumnName("Name").HasColumnType("varchar").IsRequired(true);
                 builder.Property(x => x.MinimumDaysToAttendancePerMonth).HasColumnName("MinimumDaysToAttendancePerMonth").HasColumnType("int").IsRequired(true);
-                builder.Property(x => x.ManagerSSN).HasColumnName("ManagerSSN").HasColumnType("int").IsRequired(true);
+                builder.Property(x => x.ManagerSSN).HasColumnName("ManagerSSN").HasColumnType("varchar").HasMaxLength(14).IsRequired(true);
                 builder.Property(x => x.Location).HasColumnName("Location").HasColumnType("varchar").IsRequired(true);
             }
         }

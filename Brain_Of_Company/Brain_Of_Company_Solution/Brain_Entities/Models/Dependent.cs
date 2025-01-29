@@ -8,11 +8,10 @@ namespace Brain_Entities.Models
         [Key]
         public int Id { get; set; }
         public string Name { get; set; }
-        [ForeignKey("SSN")]
-        public int EmployeeSSN { get; set; }
 
         // Navigation property to link Dependent to Employee (weak entity)
-        public Employee Employee { get; set; }
-    
+        public List<Dependent_Employee>  dependent_Employees{ get; set; } = new List<Dependent_Employee>();
+
+
     }
 }

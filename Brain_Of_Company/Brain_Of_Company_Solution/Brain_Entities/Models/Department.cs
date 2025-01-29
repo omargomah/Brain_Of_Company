@@ -8,7 +8,7 @@ namespace Brain_Entities.Models
         [Key]
         public int Id { get; set; }
         [ForeignKey("SSN")]
-        public int ManagerSSN { get; set; }
+        public string ManagerSSN { get; set; }
         public string Name { get; set; }
         public string Location { get; set; }
         public int MinimumDaysToAttendancePerMonth { get; set; }

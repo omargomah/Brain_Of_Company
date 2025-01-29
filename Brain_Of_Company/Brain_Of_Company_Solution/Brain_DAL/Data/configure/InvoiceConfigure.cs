@@ -14,6 +14,7 @@ namespace Brain_DAL.Data.configure
         {
             builder.HasKey(x => x.Id);
             builder.Property(x => x.Id).HasColumnName("Id").HasColumnType("int").IsRequired(true);
+            builder.Property(x => x.ProductId).HasColumnName("ProductId").HasColumnType("int").IsRequired(true);
             builder.Property(x => x.DOS).HasColumnName("DateOfSale").HasColumnType("DateTime").IsRequired(true);
             builder.Property(x => x.IsDeleted).HasColumnName("Isdeleted").HasColumnType("BIT").IsRequired(true);
             builder.Property(x => x.Quantities).HasColumnName("Quantities").HasColumnType("int").IsRequired(true);

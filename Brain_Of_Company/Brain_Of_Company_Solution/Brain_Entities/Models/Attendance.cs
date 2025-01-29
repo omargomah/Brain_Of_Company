@@ -10,7 +10,7 @@ namespace Brain_Entities.Models
         public DateTime DateOfDay { get; set; }
         public bool IsAttended { get; set; }
         [ForeignKey("SSN")]
-        public int EmployeeSSN { get; set; }
+        public string EmployeeSSN { get; set; }
         public Employee Employee { get; set; } // Total from Attendance
 
     }

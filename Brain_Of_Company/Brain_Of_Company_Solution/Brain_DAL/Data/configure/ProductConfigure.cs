@@ -15,11 +15,12 @@ namespace Brain_DAL.Data.configure
         {
             builder.HasKey(x=> x.Id);
             builder.Property(x => x.Id).HasColumnName("Id").HasColumnType("int").IsRequired(true);
+            builder.Property(x => x.CategoryId).HasColumnName("CategoryId").HasColumnType("int").IsRequired(true);
             builder.Property(x => x.RealQuantities).HasColumnName("RealQuantities").HasColumnType("int").IsRequired(true);
             builder.Property(x => x.SoldQuantities).HasColumnName("SoldQuantities").HasColumnType("int").IsRequired(true);
             builder.Property(x => x.Price).HasColumnName("Price").HasColumnType("Decimal").IsRequired(true);
-            builder.Property(x => x.DOA).HasColumnName("DateOfArriving").HasColumnType("DateTime").IsRequired(true);
-            builder.Property(x => x.DOD).HasColumnName("DateOfArriving").HasColumnType("DateTime").IsRequired(false);
+            builder.Property(x => x.DOA).HasColumnName("DateOfAdd").HasColumnType("DateTime").IsRequired(true);
+            builder.Property(x => x.DOD).HasColumnName("DateOfDelete").HasColumnType("DateTime").IsRequired(false);
             builder.Property(x => x.IsDeleted).HasColumnName("IsDeleted").HasColumnType("BIT").IsRequired(true);
             builder.HasMany(x => x.Invoices).WithOne(x => x.Product).HasForeignKey(x => x.ProductId).IsRequired(true).OnDelete(DeleteBehavior.Cascade);
         }

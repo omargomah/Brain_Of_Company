@@ -14,12 +14,10 @@ namespace Brain_DAL.Data.configure
         public void Configure(EntityTypeBuilder<Attendance> builder)
         {
             builder.HasKey(x => x.Id);
-            builder.Property(x => x.Id).HasColumnName("Id").HasColumnType("int").IsRequired(true);//
-            builder.Property(x => x.DateOfDay).HasColumnName("DateOfDay").HasColumnType("DateTime").IsRequired(true);//
+            builder.Property(x => x.Id).HasColumnName("Id").HasColumnType("int").IsRequired(true);
+            builder.Property(x => x.DateOfDay).HasColumnName("DateOfDay").HasColumnType("DateTime").IsRequired(true);
             builder.Property(x => x.IsAttended).HasColumnName("IsAttended").HasColumnType("BIT").IsRequired(true);
-            builder.Property(x => x.EmployeeSSN).HasColumnName("EmployeeSSN").HasColumnType("int").IsRequired(true);
-            
-
+            builder.Property(x => x.EmployeeSSN).HasColumnName("EmployeeSSN").HasMaxLength(14).HasColumnType("varchar").IsRequired(true);
         }
     }
 }

@@ -16,6 +16,7 @@ namespace Brain_DAL.Data.configure
             builder.HasKey(x => x.Id);
             builder.Property(x => x.Id).HasColumnName("Id").HasColumnType("int").IsRequired(true);
             builder.Property(x => x.Name).HasColumnName("Name").HasColumnType("varchar").HasMaxLength(100).IsRequired(true);
+            builder.HasMany(x => x.dependent_Employees).WithOne(x => x.Dependent).IsRequired(true).HasForeignKey(x => x.DependentId).OnDelete(DeleteBehavior.Cascade);
         }
     }
 }
