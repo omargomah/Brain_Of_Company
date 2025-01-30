@@ -1,1 +1,12 @@
-[]
+[
+  {
+    "ContainingType": "Brain_API.Controllers.EmployeeController",
+    "Method": "GetAllClinics",
+    "RelativePath": "api/Employee/GetAllEmployees",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

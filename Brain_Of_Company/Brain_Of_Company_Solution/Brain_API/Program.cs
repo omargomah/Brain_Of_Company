@@ -1,6 +1,8 @@
 
 using Microsoft.EntityFrameworkCore;
 using System;
+using Interfaces;
+using DAL;
 using Brain_DAL.Data;
 
 namespace Brain_API
@@ -14,6 +16,7 @@ namespace Brain_API
             // Add services to the container.
             var con = builder.Configuration.GetConnectionString("con");
             builder.Services.AddDbContext<AppDBContext>(options => options.UseSqlServer(con));
+            builder.Services.AddTransient<IUnitOfWork, UnitOfWork>();
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

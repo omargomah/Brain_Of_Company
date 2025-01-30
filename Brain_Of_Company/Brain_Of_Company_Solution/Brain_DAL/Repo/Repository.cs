@@ -1,22 +1,22 @@
-﻿using Models;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
-using System.Linq.Dynamic.Core;
+using Brain_DAL.Data;
 using Interfaces;
-using Data;
+using Brain_Entities.Models;
+using System.Collections.Generic;
+
 
 namespace DAL
 {
     public class Repository<T> : IRepository<T> where T : class
     {
-        protected clinicdbContext _context;
+        protected AppDBContext _context;
 
-        public Repository(clinicdbContext context)
+        public Repository(AppDBContext context)
         {
             _context = context;
         }
@@ -133,10 +133,10 @@ namespace DAL
             if (criteria != null)
                 query = _context.Set<T>().Where(criteria);
 
-            if (!string.IsNullOrEmpty(sortColumn) && !string.IsNullOrEmpty(sortColumnDirection))
-            {
-                query = query.OrderBy(string.Concat(sortColumn, " ", sortColumnDirection));
-            }
+            //if (!string.IsNullOrEmpty(sortColumn) && !string.IsNullOrEmpty(sortColumnDirection))
+            //{
+            //    query = query.OrderBy(string.Concat(sortColumn, " ", sortColumnDirection));
+            //}
 
             if (skip.HasValue)
             {

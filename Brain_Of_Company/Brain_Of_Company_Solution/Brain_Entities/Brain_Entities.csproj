@@ -8,16 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="interfaces\IRepository.cs" />
-    <Compile Remove="interfaces\IUnitOfWork.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="interfaces\IRepository.cs" />
-    <None Include="interfaces\IUnitOfWork.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.7" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.7">
       <PrivateAssets>all</PrivateAssets>

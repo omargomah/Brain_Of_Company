@@ -8,16 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Repo\Repository.cs" />
-    <Compile Remove="Repo\UnitOfWork.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="Repo\Repository.cs" />
-    <None Include="Repo\UnitOfWork.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.7" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.7">
       <PrivateAssets>all</PrivateAssets>
@@ -28,5 +18,6 @@
   <ItemGroup>
     <ProjectReference Include="..\Brain_Entities\Brain_Entities.csproj" />
   </ItemGroup>
+
 
 </Project>
