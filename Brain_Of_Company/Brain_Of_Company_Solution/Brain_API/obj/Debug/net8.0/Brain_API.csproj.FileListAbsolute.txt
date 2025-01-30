@@ -295,3 +295,4 @@ D:\ProjectsWebBack\Brain_Of_Company\Brain_Of_Company\Brain_Of_Company\Brain_Of_C
 D:\ProjectsWebBack\Brain_Of_Company\Brain_Of_Company\Brain_Of_Company\Brain_Of_Company_Solution\Brain_API\obj\Debug\net8.0\Brain_API.pdb
 D:\ProjectsWebBack\Brain_Of_Company\Brain_Of_Company\Brain_Of_Company\Brain_Of_Company_Solution\Brain_API\obj\Debug\net8.0\Brain_API.genruntimeconfig.cache
 D:\ProjectsWebBack\Brain_Of_Company\Brain_Of_Company\Brain_Of_Company\Brain_Of_Company_Solution\Brain_API\obj\Debug\net8.0\ref\Brain_API.dll
+D:\ProjectsWebBack\Brain_Of_Company\Brain_Of_Company\Brain_Of_Company\Brain_Of_Company_Solution\Brain_API\obj\Debug\net8.0\Brain_API.MvcApplicationPartsAssemblyInfo.cs
