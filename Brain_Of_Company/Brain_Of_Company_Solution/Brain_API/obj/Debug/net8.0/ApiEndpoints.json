@@ -100,6 +100,169 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Brain_API.Controllers.EmployeeDependantController",
+    "Method": "AddDependent",
+    "RelativePath": "api/EmployeeDependant/AddDependent",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dependentDTO",
+        "Type": "Brain_API.DTO.EmployeeDependentDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Brain_API.Controllers.EmployeeDependantController",
+    "Method": "DeleteDependent",
+    "RelativePath": "api/EmployeeDependant/DeleteDependent",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dependentId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "employeeSSN",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Brain_API.Controllers.EmployeeDependantController",
+    "Method": "EditDependent",
+    "RelativePath": "api/EmployeeDependant/EditDependent",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dependentDTO",
+        "Type": "Brain_API.DTO.EmployeeDependentDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Brain_API.Controllers.EmployeeDependantController",
+    "Method": "GetAllDependents",
+    "RelativePath": "api/EmployeeDependant/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Brain_API.Controllers.EmployeeDependantController",
+    "Method": "GetByEmployeeSSN",
+    "RelativePath": "api/EmployeeDependant/GetByEmployeeSSN",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "employeeSSN",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Brain_API.Controllers.InvoiceController",
+    "Method": "AddInvoice",
+    "RelativePath": "api/Invoice/AddProduct",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "invoiceDTO",
+        "Type": "Brain_API.DTO.InvoiceDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Brain_API.Controllers.InvoiceController",
+    "Method": "DeleteProductById",
+    "RelativePath": "api/Invoice/DeleteProductById",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Brain_API.Controllers.InvoiceController",
+    "Method": "EditProduct",
+    "RelativePath": "api/Invoice/EditInvoice",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "invoiceDTO",
+        "Type": "Brain_API.DTO.InvoiceAndProduct",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Brain_API.Controllers.InvoiceController",
+    "Method": "GetAllInvoices",
+    "RelativePath": "api/Invoice/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Brain_API.Controllers.InvoiceController",
+    "Method": "GetByDOS",
+    "RelativePath": "api/Invoice/GetByDateOfSale",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dos",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Brain_API.Controllers.InvoiceController",
+    "Method": "GetProductWithCategoryName",
+    "RelativePath": "api/Invoice/GetInvoiceWithProductName",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Brain_API.Controllers.ProductController",
     "Method": "AddProduct",
     "RelativePath": "api/Product/AddProduct",
@@ -187,6 +350,16 @@
         "IsRequired": false
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Brain_API.Controllers.ProductController",
+    "Method": "GetProductWithCategoryName",
+    "RelativePath": "api/Product/GetProductWithCategoryName",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   }
 ]

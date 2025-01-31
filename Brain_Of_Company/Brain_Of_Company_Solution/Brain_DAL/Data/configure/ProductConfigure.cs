@@ -15,6 +15,7 @@ namespace Brain_DAL.Data.configure
         {
             builder.HasKey(x=> x.Id);
             builder.Property(x => x.Id).HasColumnName("Id").HasColumnType("int").IsRequired(true);
+            builder.Property(x => x.Name).HasColumnName("Name").HasColumnType("varchar").HasMaxLength(100).IsRequired(true);
             builder.Property(x => x.CategoryId).HasColumnName("CategoryId").HasColumnType("int").IsRequired(true);
             builder.Property(x => x.RealQuantities).HasColumnName("RealQuantities").HasColumnType("int").IsRequired(true);
             builder.Property(x => x.SoldQuantities).HasColumnName("SoldQuantities").HasColumnType("int").IsRequired(true);

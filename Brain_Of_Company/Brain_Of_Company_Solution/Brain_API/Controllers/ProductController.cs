@@ -1,5 +1,4 @@
-﻿
-using Brain_API.DTO;
+﻿using Brain_API.DTO;
 using Brain_Entities.Models;
 using Interfaces;
 using Microsoft.AspNetCore.Http;
@@ -14,6 +13,27 @@ namespace Brain_API.Controllers
         public ProductController(IUnitOfWork unitOfWork) : base(unitOfWork)
         {
         }
+
+        [HttpGet("GetProductWithCategoryName")]
+        public async Task<IActionResult> GetProductWithCategoryName()
+        {
+            var products = await _unitOfWork.Products.GetAllAsync();
+            var categories = await _unitOfWork.Categories.GetAllAsync(); 
+
+            var listProduct = products.Select(x => new ProductAndCategory()
+            {
+                Id = x.Id,
+                Name = x.Name,
+                Price = x.Price,
+                CategoryId = x.CategoryId,
+                CategoryName = categories.FirstOrDefault(c => c.Id == x.CategoryId)?.Name ?? "Unknown",
+                RealQuantities = x.RealQuantities,
+                SoldQuantity = x.SoldQuantities
+            });
+
+            return Ok(listProduct);
+        }
+
 
         [HttpGet("GetAll")]
         public async Task<IActionResult> GetAllProduct()

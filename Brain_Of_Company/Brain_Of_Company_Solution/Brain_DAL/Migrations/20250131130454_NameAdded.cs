@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Brain_DAL.Migrations
 {
     /// <inheritdoc />
-    public partial class initial : Migration
+    public partial class NameAdded : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -43,6 +43,7 @@ namespace Brain_DAL.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
+                    Name = table.Column<string>(type: "varchar(100)", maxLength: 100, nullable: false),
                     Price = table.Column<decimal>(type: "Decimal(18,0)", nullable: false),
                     DateOfAdd = table.Column<DateTime>(type: "DateTime", nullable: false),
                     DateOfDelete = table.Column<DateTime>(type: "DateTime", nullable: true),

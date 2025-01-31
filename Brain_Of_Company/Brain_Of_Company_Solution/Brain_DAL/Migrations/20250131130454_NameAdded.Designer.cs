@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Brain_DAL.Migrations
 {
     [DbContext(typeof(AppDBContext))]
-    [Migration("20250129191432_initial")]
-    partial class initial
+    [Migration("20250131130454_NameAdded")]
+    partial class NameAdded
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -296,6 +296,12 @@ namespace Brain_DAL.Migrations
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("BIT")
                         .HasColumnName("IsDeleted");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar")
+                        .HasColumnName("Name");
 
                     b.Property<decimal>("Price")
                         .HasColumnType("Decimal")
