@@ -116,12 +116,14 @@ namespace Brain_API.Controllers
         public async Task<IActionResult> EditProduct(InvoiceAndProduct invoiceDTO)
         {
             var invoice = await _unitOfWork.Invoices.GetByIdAsync(invoiceDTO.Id);
-            if (invoice != null && invoice.IsDeleted == false)
-            {
+            var product = await _unitOfWork.Products.GetByIdAsync(invoiceDTO.ProductId);
 
+            if (invoice != null && invoice.IsDeleted == false && product != null)
+            {
+                int temp = product.RealQuantities - invoice.Quantities;
                 invoice.DOS = invoiceDTO.DateOfSale;
                 var tempo = await _unitOfWork.Invoices.FindAsync(x =>x.DOS == invoiceDTO.DateOfSale);
-                if (tempo == null || tempo.Id == invoice.Id)
+                if ((tempo == null || tempo.Id == invoice.Id) && (product.RealQuantities - invoice.Quantities)>=0)
                 { 
                     invoice.Price = invoiceDTO.Price;
                     invoice.Quantities = invoiceDTO.Quantities;
@@ -136,7 +138,7 @@ namespace Brain_API.Controllers
         [HttpPost("AddProduct")]
         public async Task<IActionResult> AddInvoice(InvoiceDTO invoiceDTO)
         {
-            
+            var product =await _unitOfWork.Products.GetByIdAsync(invoiceDTO.ProductId);
                 var invoice = new Invoice()
                 {
                     DOS = DateTime.Now,
@@ -146,14 +148,21 @@ namespace Brain_API.Controllers
                     IsDeleted = false,
 
                 };
-            
-                await _unitOfWork.Invoices.AddAsync(invoice);
-               int success = _unitOfWork.Save();
-                if (success != 0)
+                if(product != null)
                 {
-                     return Ok("Added!");
+                    int temp = product.RealQuantities - invoice.Quantities;
+                    if (temp >= 0)
+                    {
+                        await _unitOfWork.Invoices.AddAsync(invoice);
+                        int success = _unitOfWork.Save();
+                        if (success != 0)
+                        {
+                            return Ok("Added!");
+                        }
+                    }
+                    return BadRequest("invalid Quantity");
                 }
-            return BadRequest("not true");
+                    return BadRequest("Invalid ProductId");
         }
 
         [HttpDelete("DeleteProductById")]
