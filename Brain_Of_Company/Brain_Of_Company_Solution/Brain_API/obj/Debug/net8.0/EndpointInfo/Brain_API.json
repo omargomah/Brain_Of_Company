@@ -38,6 +38,50 @@
         }
       }
     },
+    "/api/Category/GetProductByCategory": {
+      "get": {
+        "tags": [
+          "Category"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Category/GetProductsCountInCategory": {
+      "get": {
+        "tags": [
+          "Category"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/api/Category/EditCategory": {
       "put": {
         "tags": [
@@ -335,6 +379,66 @@
         }
       }
     },
+    "/api/Invoice/GetInvoicesByDateRange": {
+      "get": {
+        "tags": [
+          "Invoice"
+        ],
+        "parameters": [
+          {
+            "name": "startDate",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          {
+            "name": "endDate",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Invoice/CalculateTotalSales": {
+      "get": {
+        "tags": [
+          "Invoice"
+        ],
+        "parameters": [
+          {
+            "name": "startDate",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          {
+            "name": "endDate",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/api/Invoice/EditInvoice": {
       "put": {
         "tags": [
@@ -432,6 +536,30 @@
       }
     },
     "/api/Product/GetAll": {
+      "get": {
+        "tags": [
+          "Product"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Product/GetTopSelling": {
+      "get": {
+        "tags": [
+          "Product"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Product/AlertLowStock": {
       "get": {
         "tags": [
           "Product"
@@ -614,6 +742,10 @@
         "additionalProperties": false
       },
       "EmployeeDependentDTO": {
+        "required": [
+          "dependentId",
+          "employeeSSN"
+        ],
         "type": "object",
         "properties": {
           "dependentId": {
@@ -621,13 +753,21 @@
             "format": "int32"
           },
           "employeeSSN": {
-            "type": "string",
-            "nullable": true
+            "minLength": 1,
+            "type": "string"
           }
         },
         "additionalProperties": false
       },
       "InvoiceAndProduct": {
+        "required": [
+          "dateOfSale",
+          "id",
+          "price",
+          "productId",
+          "productName",
+          "quantities"
+        ],
         "type": "object",
         "properties": {
           "price": {
@@ -647,8 +787,8 @@
             "format": "int32"
           },
           "productName": {
-            "type": "string",
-            "nullable": true
+            "minLength": 1,
+            "type": "string"
           },
           "dateOfSale": {
             "type": "string",
@@ -658,6 +798,11 @@
         "additionalProperties": false
       },
       "InvoiceDTO": {
+        "required": [
+          "price",
+          "productId",
+          "quantities"
+        ],
         "type": "object",
         "properties": {
           "price": {
@@ -676,6 +821,14 @@
         "additionalProperties": false
       },
       "ProductDTO": {
+        "required": [
+          "categoryId",
+          "id",
+          "name",
+          "price",
+          "realQuantities",
+          "soldQuantity"
+        ],
         "type": "object",
         "properties": {
           "price": {
@@ -683,8 +836,8 @@
             "format": "double"
           },
           "name": {
-            "type": "string",
-            "nullable": true
+            "minLength": 1,
+            "type": "string"
           },
           "categoryId": {
             "type": "integer",
@@ -706,6 +859,12 @@
         "additionalProperties": false
       },
       "ProductDTOAdd": {
+        "required": [
+          "categoryId",
+          "name",
+          "price",
+          "realQuantities"
+        ],
         "type": "object",
         "properties": {
           "price": {
@@ -713,8 +872,8 @@
             "format": "double"
           },
           "name": {
-            "type": "string",
-            "nullable": true
+            "minLength": 1,
+            "type": "string"
           },
           "categoryId": {
             "type": "integer",
@@ -728,11 +887,14 @@
         "additionalProperties": false
       },
       "ProductDtoWithoutId": {
+        "required": [
+          "name"
+        ],
         "type": "object",
         "properties": {
           "name": {
-            "type": "string",
-            "nullable": true
+            "minLength": 1,
+            "type": "string"
           }
         },
         "additionalProperties": false

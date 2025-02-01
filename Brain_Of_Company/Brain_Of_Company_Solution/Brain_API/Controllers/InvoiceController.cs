@@ -19,7 +19,7 @@ namespace Brain_API.Controllers
             var products = await _unitOfWork.Products.GetAllAsync();
             var invoices = await _unitOfWork.Invoices.GetAllAsync();
 
-            var listInvoice = invoices.Select(x => new InvoiceAndProduct()
+            var listInvoice = invoices.Where(x => x.IsDeleted == false).Select(x => new InvoiceAndProduct()
             {
                 Id = x.Id,
                 Price = x.Price,
@@ -37,7 +37,7 @@ namespace Brain_API.Controllers
         public async Task<IActionResult> GetAllInvoices()
         {
             var list = await _unitOfWork.Invoices.GetAllAsync();
-            var Invoices = list.Select(x => new InvoiceDTO() {   Price = x.Price, ProductId = x.Id, Quantities = x.Quantities });
+            var Invoices = list.Where(x => x.IsDeleted == false).Select(x => new InvoiceDTO() {   Price = x.Price, ProductId = x.Id, Quantities = x.Quantities });
             return Ok(Invoices);
         }
 
@@ -46,14 +46,14 @@ namespace Brain_API.Controllers
         {
             var invoice = await _unitOfWork.Invoices.FindAsync(x => x.DOS == dos);
 
-            if (invoice == null)
+            if (invoice == null || invoice.IsDeleted == true)
             {
                 return NotFound("Invoice not found");
             }
 
             var product = await _unitOfWork.Products.FindAsync(x => x.Id == invoice.ProductId);
 
-            if (product == null)
+            if (product == null || product.IsDeleted == true)
             {
                 return NotFound("Product not found");
             }
@@ -71,12 +71,52 @@ namespace Brain_API.Controllers
             return Ok(invoiceDTO);
         }
 
+        [HttpGet("GetInvoicesByDateRange")]
+        public async Task<IActionResult> GetInvoicesByDateRange(DateTime startDate, DateTime endDate)
+        {
+            var invoices = await _unitOfWork.Invoices.FindAllAsync(x => x.DOS >= startDate && x.DOS <= endDate && x.IsDeleted == false);
+
+            if (invoices == null || !invoices.Any())
+            {
+                return NotFound("No invoices found in the given date range.");
+            }
+
+            var products = await _unitOfWork.Products.GetAllAsync();
+
+            var invoicesWithProductNames = invoices.Select(invoice => new InvoiceAndProduct
+            {
+                Id = invoice.Id,
+                ProductId = invoice.ProductId,
+                ProductName = products.FirstOrDefault(p => p.Id == invoice.ProductId)?.Name ?? "Unknown",
+                Price = invoice.Price,
+                Quantities = invoice.Quantities,
+                DateOfSale = invoice.DOS
+            }).ToList();
+
+            return Ok(invoicesWithProductNames);
+        }
+
+        [HttpGet("CalculateTotalSales")]
+        public async Task<IActionResult> GetTotalSales(DateTime startDate, DateTime endDate)
+        {
+            var invoices = await _unitOfWork.Invoices.FindAllAsync(x => x.DOS >= startDate && x.DOS <= endDate && x.IsDeleted == false);
+
+            if (invoices == null || !invoices.Any())
+            {
+                return NotFound("No invoices found in the given date range.");
+            }
+            var totalSale = invoices.Select(x => x.Price * x.Quantities).Sum(); 
+            return Ok($"totalSale was {totalSale} at this interval");
+        }
+
+
+
 
         [HttpPut("EditInvoice")]
         public async Task<IActionResult> EditProduct(InvoiceAndProduct invoiceDTO)
         {
             var invoice = await _unitOfWork.Invoices.GetByIdAsync(invoiceDTO.Id);
-            if (invoice != null)
+            if (invoice != null && invoice.IsDeleted == false)
             {
 
                 invoice.DOS = invoiceDTO.DateOfSale;
@@ -96,7 +136,7 @@ namespace Brain_API.Controllers
         [HttpPost("AddProduct")]
         public async Task<IActionResult> AddInvoice(InvoiceDTO invoiceDTO)
         {
-                
+            
                 var invoice = new Invoice()
                 {
                     DOS = DateTime.Now,
@@ -104,8 +144,9 @@ namespace Brain_API.Controllers
                     ProductId = invoiceDTO.ProductId,
                     Quantities = invoiceDTO.Quantities,
                     IsDeleted = false,
-                    
+
                 };
+            
                 await _unitOfWork.Invoices.AddAsync(invoice);
                int success = _unitOfWork.Save();
                 if (success != 0)

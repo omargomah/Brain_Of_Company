@@ -38,6 +38,42 @@ namespace Brain_API.Controllers
             return BadRequest("Not Found");
         }
 
+        [HttpGet("GetProductByCategory")]
+        public async Task<IActionResult> GetProductsOFTheCategory(int id)
+        {
+            var cat = await _unitOfWork.Categories.GetByIdAsync(id);
+            if (cat != null)
+            {
+                var listpro = await _unitOfWork.Products.FindAllAsync(x => x.CategoryId == cat.Id && x.IsDeleted == false);
+                if (listpro != null)
+                {
+                    var listProduct = listpro.Select(x => new ProductAndCategory()
+                    {
+                        Id = x.Id,
+                        Name = x.Name,
+                        Price = x.Price,
+                        CategoryId = x.CategoryId,
+                        CategoryName = cat.Name,
+                        RealQuantities = x.RealQuantities,
+                        SoldQuantity = x.SoldQuantities
+                    });
+                    return(Ok(listProduct));
+                }
+                return(BadRequest("there is no products in this category"));
+
+            }
+            return (BadRequest("Invalid Id"));
+
+        }
+
+        [HttpGet("GetProductsCountInCategory")]
+        public async Task<IActionResult> GetProductsCount(int id)
+        {
+            var products = await _unitOfWork.Products.FindAllAsync(x => x.CategoryId == id && x.IsDeleted == false );
+            return Ok($"There are {products.Count()} in this category");
+        }
+
+
         [HttpPut("EditCategory")]
         public async Task<IActionResult> EditCategory(CategoryDTO categoryDTO)
         {
