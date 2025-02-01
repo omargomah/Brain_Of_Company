@@ -83,11 +83,11 @@ namespace Brain_DAL.Migrations
 
                     b.Property<string>("Location")
                         .IsRequired()
+                        .HasMaxLength(100)
                         .HasColumnType("varchar")
                         .HasColumnName("Location");
 
                     b.Property<string>("ManagerSSN")
-                        .IsRequired()
                         .HasMaxLength(14)
                         .HasColumnType("varchar")
                         .HasColumnName("ManagerSSN");
@@ -98,13 +98,15 @@ namespace Brain_DAL.Migrations
 
                     b.Property<string>("Name")
                         .IsRequired()
+                        .HasMaxLength(100)
                         .HasColumnType("varchar")
                         .HasColumnName("Name");
 
                     b.HasKey("Id");
 
                     b.HasIndex("ManagerSSN")
-                        .IsUnique();
+                        .IsUnique()
+                        .HasFilter("[ManagerSSN] IS NOT NULL");
 
                     b.ToTable("Department");
                 });
@@ -172,7 +174,7 @@ namespace Brain_DAL.Migrations
                         .HasColumnType("DateTime")
                         .HasColumnName("DateOfBirth");
 
-                    b.Property<DateTime>("DateOfFiring")
+                    b.Property<DateTime?>("DateOfFiring")
                         .HasColumnType("DateTime")
                         .HasColumnName("DateOfFiring");
 

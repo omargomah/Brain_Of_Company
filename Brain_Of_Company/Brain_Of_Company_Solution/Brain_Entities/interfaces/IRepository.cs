@@ -1,16 +1,23 @@
-﻿using System;
+﻿using Brain_Entities.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
-namespace Interfaces
+namespace Interfaces 
 {
     public interface IRepository<T> where T : class
     {
+        public List<Department> GetAllDepartmentWithEmployeeAndManager();
         T GetById(int id);
+        Dependent? GetDependentWithEmployeesById(int id);
+        Attendance? GetAttendanceWithEmployeesById(int id);
+        Task<List<Attendance>>? GetAttendanceWithEmployeesByDate(DateOnly date);
         Task<T> GetByIdAsync(int id);
+        public Department? GetDepartmentWithEmployeeByDEPIdAsync(int id);
         Task<T> GetByCompositeAsync(params object[] keys);
         Task<T> GetByNameAsync(string name);
         IEnumerable<T> GetAll();
@@ -56,5 +63,8 @@ namespace Interfaces
         Int64 Max(Expression<Func<T, bool>> criteria, Expression<Func<T, object>> column);
         public bool IsExist(Expression<Func<T, bool>> criteria);
         T Last(Expression<Func<T, bool>> criteria, Expression<Func<T, object>> orderBy);
+        bool IsEmployeeExistBySSN(string SSN);
+        public Task<Employee?> GetBySSNAsync(string SSN);
+
     }
 }

@@ -24,7 +24,7 @@ namespace Brain_DAL.Data.configure
             builder.Property(x => x.DepartmentId).HasColumnName("DepartmentId").HasColumnType("int").IsRequired(true);
             builder.Property(x => x.DateOfBirth).HasColumnName("DateOfBirth").HasColumnType("DateTime").IsRequired(true);
             builder.Property(x => x.DateOfHiring).HasColumnName("DateOfHiring").HasColumnType("DateTime").IsRequired(true);
-            builder.Property(x => x.DateOfFiring).HasColumnName("DateOfFiring").HasColumnType("DateTime").IsRequired(true);
+            builder.Property(x => x.DateOfFiring).HasColumnName("DateOfFiring").HasColumnType("DateTime").IsRequired(false);
             builder.Property(x => x.SalaryPerDay).HasColumnName("SalaryPerDay").HasColumnType("decimal").IsRequired(true);
             builder.Property(x => x.PercentageOfBonus).HasColumnName("PercentageOfBonus").HasColumnType("decimal").IsRequired(true);
             builder.Property(x => x.IsDeleted).HasColumnName("Isdeleted").HasColumnType("BIT").IsRequired(true);
