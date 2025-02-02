@@ -1,1 +1,24 @@
 /.vs
+# Visual Studio specific
+.vs/
+.vscode/
+
+# Build directories
+bin/
+obj/
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# .NET files
+*.pdb
+*.dll
+*.exe
+*.cache
+*.json
+
+# ReSharper files (if you're using ReSharper)
+.idea/

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\ProjectsWebBack\\Brain_Of_Company\\Brain_Of_Company\\Brain_Of_Company\\Brain_Of_Company_Solution\\Brain_Entities\\Brain_Entities.csproj": {}
+    "D:\\ProjectsWebBack\\Brain_Of_Company\\Brain_Of_Company\\Brain_Of_Company\\Brain_Of_Company\\Brain_Of_Company\\Brain_Of_Company_Solution\\Brain_Entities\\Brain_Entities.csproj": {}
   },
   "projects": {
-    "D:\\ProjectsWebBack\\Brain_Of_Company\\Brain_Of_Company\\Brain_Of_Company\\Brain_Of_Company_Solution\\Brain_Entities\\Brain_Entities.csproj": {
+    "D:\\ProjectsWebBack\\Brain_Of_Company\\Brain_Of_Company\\Brain_Of_Company\\Brain_Of_Company\\Brain_Of_Company\\Brain_Of_Company_Solution\\Brain_Entities\\Brain_Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ProjectsWebBack\\Brain_Of_Company\\Brain_Of_Company\\Brain_Of_Company\\Brain_Of_Company_Solution\\Brain_Entities\\Brain_Entities.csproj",
+        "projectUniqueName": "D:\\ProjectsWebBack\\Brain_Of_Company\\Brain_Of_Company\\Brain_Of_Company\\Brain_Of_Company\\Brain_Of_Company\\Brain_Of_Company_Solution\\Brain_Entities\\Brain_Entities.csproj",
         "projectName": "Brain_Entities",
-        "projectPath": "D:\\ProjectsWebBack\\Brain_Of_Company\\Brain_Of_Company\\Brain_Of_Company\\Brain_Of_Company_Solution\\Brain_Entities\\Brain_Entities.csproj",
+        "projectPath": "D:\\ProjectsWebBack\\Brain_Of_Company\\Brain_Of_Company\\Brain_Of_Company\\Brain_Of_Company\\Brain_Of_Company\\Brain_Of_Company_Solution\\Brain_Entities\\Brain_Entities.csproj",
         "packagesPath": "C:\\Users\\Sherif\\.nuget\\packages\\",
-        "outputPath": "D:\\ProjectsWebBack\\Brain_Of_Company\\Brain_Of_Company\\Brain_Of_Company\\Brain_Of_Company_Solution\\Brain_Entities\\obj\\",
+        "outputPath": "D:\\ProjectsWebBack\\Brain_Of_Company\\Brain_Of_Company\\Brain_Of_Company\\Brain_Of_Company\\Brain_Of_Company\\Brain_Of_Company_Solution\\Brain_Entities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
