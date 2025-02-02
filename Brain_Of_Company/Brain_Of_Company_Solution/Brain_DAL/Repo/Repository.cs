@@ -8,6 +8,7 @@ using Brain_DAL.Data;
 using Interfaces;
 using Brain_Entities.Models;
 using System.Collections.Generic;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 
 namespace DAL
@@ -20,16 +21,28 @@ namespace DAL
         {
             _context = context;
         }
+        public  Task<List<Attendance>> GetAttendanceWithEmployeesByDate(DateOnly date)
+            => _context.Attendance.Where(x => DateOnly.FromDateTime(x.DateOfDay).CompareTo(date) == 0 ).ToListAsync();
+        public Attendance? GetAttendanceWithEmployeesById(int id)
+            => _context.Attendance.Where(x => x.Id == id).Include(x=>x.Employee).FirstOrDefault();
+        public Dependent? GetDependentWithEmployeesById(int id) 
+            => _context.Dependent.Where(x => x.Id == id).Include(x=>x.dependent_Employees).ThenInclude(x=>x.Employee).FirstOrDefault();
+
+        public  Department? GetDepartmentWithEmployeeByDEPIdAsync(int id) =>
+            _context.Department
+            .Where(x => x.Id == id)
+            .Include(x => x.WorkingEmployees)
+            .Include(x => x.ManagedBy).FirstOrDefault();
+        public List<Department> GetAllDepartmentWithEmployeeAndManager() =>
+             _context.Department.ToList();
         public IEnumerable<T> GetAll()
         {
             return _context.Set<T>().ToList();
         }
         public async Task<T> GetByCompositeAsync(params object[] keys)
-
         {
             return await _context.Set<T>().FindAsync(keys);
         }
-
         public async Task<IEnumerable<T>> GetAllAsync()
         {
             return await _context.Set<T>().ToListAsync();
@@ -38,11 +51,15 @@ namespace DAL
         {
             return await _context.Set<T>().FirstOrDefaultAsync(e => EF.Property<string>(e, "Name") == name);
         }
-
-
+        public async Task<Employee?> GetBySSNAsync(string SSN)
+            => await _context.Employees.FirstOrDefaultAsync(e => e.SSN == SSN);
         public T GetById(int id)
         {
             return _context.Set<T>().Find(id);
+        }
+        public bool CheckExistbyId(int id)
+        {
+            return _context.Set<T>().Any(x=> EF.Property<int>(x,"Id") == id);
         }
 
         public async Task<T> GetByIdAsync(int id)
@@ -275,6 +292,7 @@ namespace DAL
         {
             return _context.Set<T>().Any(criteria);
         }
+        public bool IsEmployeeExistBySSN(string SSN) =>  _context.Set<Employee>().Any(e=>string.Equals(e.SSN ,SSN) && e.IsDeleted == false);
         public T Last(Expression<Func<T, bool>> criteria, Expression<Func<T, object>> orderBy)
         {
             return _context.Set<T>().OrderByDescending(orderBy).FirstOrDefault(criteria);

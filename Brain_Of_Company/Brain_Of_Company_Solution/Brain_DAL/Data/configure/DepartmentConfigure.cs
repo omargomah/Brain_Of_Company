@@ -10,10 +10,10 @@ namespace Brain_DAL.Data.configure
             {
                 builder.HasKey(x => x.Id);
                 builder.Property(x => x.Id).HasColumnName("Id").HasColumnType("int").IsRequired(true);
-                builder.Property(x => x.Name).HasColumnName("Name").HasColumnType("varchar").IsRequired(true);
+                builder.Property(x => x.Name).HasColumnName("Name").HasColumnType("varchar").HasMaxLength(100).IsRequired(true);
                 builder.Property(x => x.MinimumDaysToAttendancePerMonth).HasColumnName("MinimumDaysToAttendancePerMonth").HasColumnType("int").IsRequired(true);
-                builder.Property(x => x.ManagerSSN).HasColumnName("ManagerSSN").HasColumnType("varchar").HasMaxLength(14).IsRequired(true);
-                builder.Property(x => x.Location).HasColumnName("Location").HasColumnType("varchar").IsRequired(true);
+                builder.Property(x => x.ManagerSSN).HasColumnName("ManagerSSN").HasColumnType("varchar").HasMaxLength(14).IsRequired(false);
+                builder.Property(x => x.Location).HasColumnName("Location").HasColumnType("varchar").HasMaxLength(100).IsRequired(true);
             }
         }
 

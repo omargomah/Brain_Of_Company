@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Brain_DAL.Migrations
 {
     [DbContext(typeof(AppDBContext))]
-    [Migration("20250129191432_initial")]
-    partial class initial
+    [Migration("20250131192209_Initial")]
+    partial class Initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -90,7 +90,6 @@ namespace Brain_DAL.Migrations
                         .HasColumnName("Location");
 
                     b.Property<string>("ManagerSSN")
-                        .IsRequired()
                         .HasMaxLength(14)
                         .HasColumnType("varchar")
                         .HasColumnName("ManagerSSN");
@@ -107,7 +106,8 @@ namespace Brain_DAL.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("ManagerSSN")
-                        .IsUnique();
+                        .IsUnique()
+                        .HasFilter("[ManagerSSN] IS NOT NULL");
 
                     b.ToTable("Department");
                 });
@@ -175,7 +175,7 @@ namespace Brain_DAL.Migrations
                         .HasColumnType("DateTime")
                         .HasColumnName("DateOfBirth");
 
-                    b.Property<DateTime>("DateOfFiring")
+                    b.Property<DateTime?>("DateOfFiring")
                         .HasColumnType("DateTime")
                         .HasColumnName("DateOfFiring");
 

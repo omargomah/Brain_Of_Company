@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Brain_DAL.Migrations
 {
     /// <inheritdoc />
-    public partial class initial : Migration
+    public partial class Initial : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -106,7 +106,7 @@ namespace Brain_DAL.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    ManagerSSN = table.Column<string>(type: "varchar(14)", maxLength: 14, nullable: false),
+                    ManagerSSN = table.Column<string>(type: "varchar(14)", maxLength: 14, nullable: true),
                     Name = table.Column<string>(type: "varchar", nullable: false),
                     Location = table.Column<string>(type: "varchar", nullable: false),
                     MinimumDaysToAttendancePerMonth = table.Column<int>(type: "int", nullable: false)
@@ -124,7 +124,7 @@ namespace Brain_DAL.Migrations
                     Name = table.Column<string>(type: "varchar(100)", maxLength: 100, nullable: false),
                     DateOfBirth = table.Column<DateTime>(type: "DateTime", nullable: false),
                     DateOfHiring = table.Column<DateTime>(type: "DateTime", nullable: false),
-                    DateOfFiring = table.Column<DateTime>(type: "DateTime", nullable: false),
+                    DateOfFiring = table.Column<DateTime>(type: "DateTime", nullable: true),
                     SalaryPerDay = table.Column<decimal>(type: "decimal(18,0)", nullable: false),
                     Isdeleted = table.Column<bool>(type: "BIT", nullable: false),
                     Phone = table.Column<string>(type: "varchar(11)", maxLength: 11, nullable: false),
@@ -180,7 +180,8 @@ namespace Brain_DAL.Migrations
                 name: "IX_Department_ManagerSSN",
                 table: "Department",
                 column: "ManagerSSN",
-                unique: true);
+                unique: true,
+                filter: "[ManagerSSN] IS NOT NULL");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Dependent_Employee_DependentId",
