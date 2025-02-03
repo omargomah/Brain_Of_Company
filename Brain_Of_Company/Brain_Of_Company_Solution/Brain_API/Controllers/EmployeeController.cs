@@ -95,8 +95,9 @@ namespace Brain_API.Controllers
         }
 
         [HttpGet("GetSalaryOfEmployee")]
-        public async Task<IActionResult> GetSalaryOfEmployee(string SSN , DateOnly StartDate)
+        public async Task<IActionResult> GetSalaryOfEmployee(string SSN , DateTime startDate)
         {
+            DateOnly StartDate = DateOnly.FromDateTime(startDate);
             if (DateOnly.FromDateTime(DateTime.Now).CompareTo(StartDate) < 0)
                 return BadRequest("Invalid Date");
             var employee = await _unitOfWork.Employees.GetBySSNAsync(SSN);
@@ -108,8 +109,9 @@ namespace Brain_API.Controllers
         }
 
         [HttpGet("GetTotalSalary")]
-        public async Task<IActionResult> GetTotalSalary(DateOnly StartDate)
+        public async Task<IActionResult> GetTotalSalary(DateTime startDate)
         {
+            DateOnly StartDate = DateOnly.FromDateTime(startDate);
             if (DateOnly.FromDateTime(DateTime.Now).CompareTo(StartDate) < 0)
                 return BadRequest("Invalid Date");
             var employees = await _unitOfWork.Employees.GetAllAsync();
@@ -132,6 +134,28 @@ namespace Brain_API.Controllers
 
         }
 
+        [HttpGet("GetDependentsEmployeeBySSN")]
+        public async Task<IActionResult> GetDependentsEmployeeBySSN(string SSN)
+        {
+            if (SSN.Length != 14)
+                return BadRequest("the length of SSN must be 14");
+            var employee = await _unitOfWork.Employees.GetBySSNAsync(SSN);
+            if (employee is null || employee.IsDeleted == true)
+                return NotFound("invalid SSN");
+            var dependents = _unitOfWork.Dependent_Employees.GetAllDependentEmployeeWithDependentBySSN(SSN);
+            ShowDependentOfEmployeeDTO showShortData = new ShowDependentOfEmployeeDTO()
+            {
+                EmployeeName = employee.Name,
+                EmployeeSSN = employee.SSN,
+                dataDependentDTOs = dependents.Select(x => new ShowShortDataDependentDTO()
+                {
+                    Id = x.DependentId,
+                    Name = x.Dependent.Name
+                }).ToList()
+            };
+            return Ok(showShortData);
+
+        }
 
         [HttpGet("GetEmployeeBySSN")]
         public async Task<IActionResult> GetOneEmployee(string SSN)
