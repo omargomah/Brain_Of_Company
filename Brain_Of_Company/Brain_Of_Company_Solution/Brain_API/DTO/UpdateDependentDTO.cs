@@ -11,4 +11,6 @@ namespace Brain_API.DTO
         public int id { get; set; }
     }
 
+
+
 }

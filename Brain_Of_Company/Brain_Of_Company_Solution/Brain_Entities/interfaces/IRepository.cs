@@ -1,4 +1,5 @@
 ﻿using Brain_Entities.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,11 +12,16 @@ namespace Interfaces
 {
     public interface IRepository<T> where T : class
     {
+
+        public Task<List<Attendance>> GetAttendanceByEmployeesSSN(string SSN);
+        public Task<List<Attendance>> GetAttendanceByEmployeesSSNInRange(string SSN, DateOnly startDate, DateOnly endDate);
+        public Attendance? GetAttendanceByEmployeesSSNInSpecificDay(string SSN, DateOnly date);
+        public IEnumerable<Dependent_Employee> GetAllDependentEmployeeWithDependentBySSN(string SSN);
+        public Task<List<Attendance>> GetAttendanceWithEmployeesByDate(DateOnly date);
         public List<Department> GetAllDepartmentWithEmployeeAndManager();
         T GetById(int id);
         Dependent? GetDependentWithEmployeesById(int id);
         Attendance? GetAttendanceWithEmployeesById(int id);
-        Task<List<Attendance>>? GetAttendanceWithEmployeesByDate(DateOnly date);
         Task<T> GetByIdAsync(int id);
         public Department? GetDepartmentWithEmployeeByDEPIdAsync(int id);
         Task<T> GetByCompositeAsync(params object[] keys);
