@@ -1,5 +1,37 @@
 [
   {
+    "ContainingType": "Controllers.AdminController",
+    "Method": "AddAdmin",
+    "RelativePath": "api/Admin",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "addAdminDTO",
+        "Type": "Brain_API.DTO.AddAdminDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Controllers.AdminController",
+    "Method": "DeleteAdmin",
+    "RelativePath": "api/Admin",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "SSN",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Brain_API.Controllers.AttendanceController",
     "Method": "AddAttendance",
     "RelativePath": "api/Attendance",

@@ -43,16 +43,16 @@ namespace Controllers
             _unitOfWork.Save();
             return Ok("delete admin success");
         }
-        [HttpPut]
-        public async Task<IActionResult> UpdateAdmin(UpdateAdminDTO updateAdminDTO)
-        {
-            var admin = _unitOfWork.Admins.GetAll().FirstOrDefault(x => x.SSN == SSN);
-            if (admin is null)
-                return NotFound("inValid SSN");
-            _unitOfWork.Admins.Delete(admin);
-            _unitOfWork.Save();
-            return Ok("delete admin success");
-        }
+        //[HttpPut]
+        //public async Task<IActionResult> UpdateAdmin(UpdateAdminDTO updateAdminDTO)
+        //{
+        //    //var admin = _unitOfWork.Admins.GetAll().FirstOrDefault(x => x.SSN == SSN);
+        //    if (admin is null)
+        //        return NotFound("inValid SSN");
+        //    _unitOfWork.Admins.Delete(admin);
+        //    _unitOfWork.Save();
+        //    return Ok("delete admin success");
+        //}
 
 
 

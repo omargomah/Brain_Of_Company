@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Brain_Entities.Models;
+using System.ComponentModel.DataAnnotations;
 
 namespace Brain_API.DTO
 {

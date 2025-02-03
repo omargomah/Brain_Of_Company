@@ -23,9 +23,15 @@ namespace Brain_API
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
             //builder.Services.AddTransient<SoftDeleteOfEmployeeMiddleWare>();
-
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("MyPolicy", policy =>
+                {
+                    policy.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
+                });
+            });
             var app = builder.Build();
-
+            app.UseCors("MyPolicy");
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
             {
