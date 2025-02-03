@@ -7,6 +7,7 @@ namespace Brain_Entities.Models
     {
         [Key]
         public int Id { get; set; }
+        public string Name { get; set; }
         public decimal Price { get; set; }
         public DateTime DOA { get; set; } // Date of Arrival
         public DateTime? DOD { get; set; } // Date of Departure (nullable)

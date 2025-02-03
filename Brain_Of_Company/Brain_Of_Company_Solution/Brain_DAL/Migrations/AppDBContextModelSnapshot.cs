@@ -296,6 +296,12 @@ namespace Brain_DAL.Migrations
                         .HasColumnType("BIT")
                         .HasColumnName("IsDeleted");
 
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar")
+                        .HasColumnName("Name");
+
                     b.Property<decimal>("Price")
                         .HasColumnType("Decimal")
                         .HasColumnName("Price");

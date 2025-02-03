@@ -1,11 +1,12 @@
 {
   "Version": 1,
-  "Hash": "/4Yn7/+zwgXU4WQhyL/fd2vnE9h03Cl5CVj12W4aQPY=",
+  "Hash": "nlvaDIHS7+kUcZS/3VTbNLD0e7dYMwodJESAkAflNTk=",
   "Source": "Brain_API",
   "BasePath": "_content/Brain_API",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": []
+  "Assets": [],
+  "Endpoints": []
 }
