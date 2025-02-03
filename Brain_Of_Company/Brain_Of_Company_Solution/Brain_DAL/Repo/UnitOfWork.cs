@@ -23,6 +23,7 @@ namespace DAL
             Employees = new Repository<Employee>(_context);
             Invoices = new Repository<Invoice>(_context);
             Products = new Repository<Product>(_context);
+            Admins = new Repository<Admin>(_context);
 
         }
         public IRepository<Attendance> Attendances { get; }
@@ -38,6 +39,7 @@ namespace DAL
         public IRepository<Employee> Employees { get; }
 
         public IRepository<Invoice> Invoices { get; }
+        public IRepository<Admin> Admins { get; }
 
         public IRepository<Product> Products { get; }
 

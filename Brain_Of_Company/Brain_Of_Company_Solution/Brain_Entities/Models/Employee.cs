@@ -28,6 +28,6 @@ namespace Brain_Entities.Models
         public Department ManagedDepartment { get; set; } // One-to-one with Department (Manage)
         public List<Attendance> Attendances { get; set; } // Many-to-one with Attendance
         public List<Dependent_Employee>  dependent_Employees{ get; set; } = new List<Dependent_Employee>();
-
+        public Admin Admin { get; set; }
     }
 }

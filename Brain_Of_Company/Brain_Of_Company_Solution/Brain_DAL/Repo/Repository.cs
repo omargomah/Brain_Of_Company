@@ -308,6 +308,7 @@ namespace DAL
         public Task<List<Attendance>> GetAttendanceWithEmployeesByDate(DateOnly date)
             => _context.Attendance.Where(x => DateOnly.FromDateTime(x.DateOfDay).CompareTo(date) == 0).ToListAsync();
 
+        public bool IsAdminExistBySSN(string SSN) => _context.Set<Admin>().Any(e => string.Equals(e.SSN, SSN));
     }
 }
 

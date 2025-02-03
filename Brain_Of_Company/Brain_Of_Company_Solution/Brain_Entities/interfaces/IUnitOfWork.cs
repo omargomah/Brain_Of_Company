@@ -29,6 +29,7 @@ namespace Interfaces
         public IRepository <Invoice> Invoices { get; }
 
         public IRepository <Product> Products { get; }
+        public IRepository <Admin> Admins { get; }
         
         int Save();
     }

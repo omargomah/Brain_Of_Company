@@ -7,7 +7,7 @@ namespace Brain_API.DTO
         [Required]
         public bool IsAttended { get; set; }
         [Required]
-        [CheckSSNISExistValidation]
+        [CheckSSNISExistValidation<Employee>]
         public string EmployeeSSN { get; set; }
     }
 

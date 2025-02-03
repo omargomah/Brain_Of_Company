@@ -12,6 +12,7 @@ namespace Brain_DAL.Data
         public DbSet<Category> Category { get; set; }
         public DbSet<Attendance> Attendance { get; set; }
         public DbSet<Invoice> Invoice { get; set; }       
+        public DbSet<Admin> Admin  { get; set; }       
         public DbSet<Dependent_Employee> Dependent_Employee { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

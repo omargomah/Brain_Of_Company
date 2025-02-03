@@ -5,7 +5,7 @@ namespace Brain_API.DTO
 {
     public class AddDepartmentDTO
     {
-        [CheckSSNISExistValidation]
+        [CheckSSNISExistValidation<Employee>]
         public string? ManagerSSN { get; set; }
         [Required]
         [CheckIsUniqueValidation<Department>]
@@ -22,7 +22,7 @@ namespace Brain_API.DTO
         [Required]
         [CheckIdExistValidation<Department>]
         public int Id { get; set; }
-        [CheckSSNISExistValidation]
+        [CheckSSNISExistValidation<Employee>]
         public string? ManagerSSN { get; set; }
         [Required]
         public string Name { get; set; }

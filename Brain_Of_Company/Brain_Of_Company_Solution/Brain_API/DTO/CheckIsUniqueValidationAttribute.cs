@@ -20,6 +20,8 @@ namespace Brain_API.DTO
                 return new ValidationResult("the name of Department must be unique");
             else if (typeof(T) == typeof(Dependent) && unitOfWork.Dependents.GetByNameAsync(value.ToString()).Result is not null)
                 return new ValidationResult("the name of dependent must be unique");
+            else if (typeof(T) == typeof(Admin) && unitOfWork.Admins.GetAll().FirstOrDefault(x=> value.ToString() == x.SSN ) is not null)
+                return new ValidationResult("the SSN of Admin must be unique");
             return ValidationResult.Success;
         }
     }
