@@ -3,52 +3,80 @@
   "WorkspaceRootPath": "D:\\Brain\\Brain_Of_Company\\Brain_Of_Company\\Brain_Of_Company_Solution\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DD6DC52C-EB23-4F8A-98C4-5F14651904B0}|Brain_API\\Brain_API.csproj|d:\\brain\\brain_of_company\\brain_of_company\\brain_of_company_solution\\brain_api\\dto\\updatedependentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD6DC52C-EB23-4F8A-98C4-5F14651904B0}|Brain_API\\Brain_API.csproj|solutionrelative:brain_api\\dto\\updatedependentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DD6DC52C-EB23-4F8A-98C4-5F14651904B0}|Brain_API\\Brain_API.csproj|d:\\brain\\brain_of_company\\brain_of_company\\brain_of_company_solution\\brain_api\\controllers\\attendancecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD6DC52C-EB23-4F8A-98C4-5F14651904B0}|Brain_API\\Brain_API.csproj|solutionrelative:brain_api\\controllers\\attendancecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD6DC52C-EB23-4F8A-98C4-5F14651904B0}|Brain_API\\Brain_API.csproj|d:\\brain\\brain_of_company\\brain_of_company\\brain_of_company_solution\\brain_api\\controllers\\dependentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD6DC52C-EB23-4F8A-98C4-5F14651904B0}|Brain_API\\Brain_API.csproj|solutionrelative:brain_api\\controllers\\dependentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD6DC52C-EB23-4F8A-98C4-5F14651904B0}|Brain_API\\Brain_API.csproj|d:\\brain\\brain_of_company\\brain_of_company\\brain_of_company_solution\\brain_api\\dto\\checkisuniquevalidationattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD6DC52C-EB23-4F8A-98C4-5F14651904B0}|Brain_API\\Brain_API.csproj|solutionrelative:brain_api\\dto\\checkisuniquevalidationattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD6DC52C-EB23-4F8A-98C4-5F14651904B0}|Brain_API\\Brain_API.csproj|d:\\brain\\brain_of_company\\brain_of_company\\brain_of_company_solution\\brain_api\\dto\\gettotalsalarydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD6DC52C-EB23-4F8A-98C4-5F14651904B0}|Brain_API\\Brain_API.csproj|solutionrelative:brain_api\\dto\\gettotalsalarydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD6DC52C-EB23-4F8A-98C4-5F14651904B0}|Brain_API\\Brain_API.csproj|d:\\brain\\brain_of_company\\brain_of_company\\brain_of_company_solution\\brain_api\\dto\\checkssnisexistvalidationattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD6DC52C-EB23-4F8A-98C4-5F14651904B0}|Brain_API\\Brain_API.csproj|solutionrelative:brain_api\\dto\\checkssnisexistvalidationattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD6DC52C-EB23-4F8A-98C4-5F14651904B0}|Brain_API\\Brain_API.csproj|d:\\brain\\brain_of_company\\brain_of_company\\brain_of_company_solution\\brain_api\\dto\\ratedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD6DC52C-EB23-4F8A-98C4-5F14651904B0}|Brain_API\\Brain_API.csproj|solutionrelative:brain_api\\dto\\ratedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD6DC52C-EB23-4F8A-98C4-5F14651904B0}|Brain_API\\Brain_API.csproj|d:\\brain\\brain_of_company\\brain_of_company\\brain_of_company_solution\\brain_api\\dto\\showshortdataaboutdepartmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD6DC52C-EB23-4F8A-98C4-5F14651904B0}|Brain_API\\Brain_API.csproj|solutionrelative:brain_api\\dto\\showshortdataaboutdepartmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DD6DC52C-EB23-4F8A-98C4-5F14651904B0}|Brain_API\\Brain_API.csproj|d:\\brain\\brain_of_company\\brain_of_company\\brain_of_company_solution\\brain_api\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD6DC52C-EB23-4F8A-98C4-5F14651904B0}|Brain_API\\Brain_API.csproj|solutionrelative:brain_api\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DD6DC52C-EB23-4F8A-98C4-5F14651904B0}|Brain_API\\Brain_API.csproj|d:\\brain\\brain_of_company\\brain_of_company\\brain_of_company_solution\\brain_api\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DD6DC52C-EB23-4F8A-98C4-5F14651904B0}|Brain_API\\Brain_API.csproj|solutionrelative:brain_api\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD6DC52C-EB23-4F8A-98C4-5F14651904B0}|Brain_API\\Brain_API.csproj|d:\\brain\\brain_of_company\\brain_of_company\\brain_of_company_solution\\brain_api\\controllers\\attendancecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD6DC52C-EB23-4F8A-98C4-5F14651904B0}|Brain_API\\Brain_API.csproj|solutionrelative:brain_api\\controllers\\attendancecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{96B5D952-4C55-4084-B62D-C216379151D4}|Brain_DAL\\Brain_DAL.csproj|d:\\brain\\brain_of_company\\brain_of_company\\brain_of_company_solution\\brain_dal\\repo\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96B5D952-4C55-4084-B62D-C216379151D4}|Brain_DAL\\Brain_DAL.csproj|solutionrelative:brain_dal\\repo\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96B5D952-4C55-4084-B62D-C216379151D4}|Brain_DAL\\Brain_DAL.csproj|d:\\brain\\brain_of_company\\brain_of_company\\brain_of_company_solution\\brain_dal\\repo\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96B5D952-4C55-4084-B62D-C216379151D4}|Brain_DAL\\Brain_DAL.csproj|solutionrelative:brain_dal\\repo\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFE59BA5-DD33-4E81-A53F-B398144165D2}|Brain_Entities\\Brain_Entities.csproj|d:\\brain\\brain_of_company\\brain_of_company\\brain_of_company_solution\\brain_entities\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFE59BA5-DD33-4E81-A53F-B398144165D2}|Brain_Entities\\Brain_Entities.csproj|solutionrelative:brain_entities\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD6DC52C-EB23-4F8A-98C4-5F14651904B0}|Brain_API\\Brain_API.csproj|d:\\brain\\brain_of_company\\brain_of_company\\brain_of_company_solution\\brain_api\\dto\\showdependentofemployeedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD6DC52C-EB23-4F8A-98C4-5F14651904B0}|Brain_API\\Brain_API.csproj|solutionrelative:brain_api\\dto\\showdependentofemployeedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DD6DC52C-EB23-4F8A-98C4-5F14651904B0}|Brain_API\\Brain_API.csproj|d:\\brain\\brain_of_company\\brain_of_company\\brain_of_company_solution\\brain_api\\dto\\showshortdataattendancedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DD6DC52C-EB23-4F8A-98C4-5F14651904B0}|Brain_API\\Brain_API.csproj|solutionrelative:brain_api\\dto\\showshortdataattendancedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD6DC52C-EB23-4F8A-98C4-5F14651904B0}|Brain_API\\Brain_API.csproj|d:\\brain\\brain_of_company\\brain_of_company\\brain_of_company_solution\\brain_api\\controllers\\apibasecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD6DC52C-EB23-4F8A-98C4-5F14651904B0}|Brain_API\\Brain_API.csproj|solutionrelative:brain_api\\controllers\\apibasecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DD6DC52C-EB23-4F8A-98C4-5F14651904B0}|Brain_API\\Brain_API.csproj|d:\\brain\\brain_of_company\\brain_of_company\\brain_of_company_solution\\brain_api\\dto\\gettotalsalarydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD6DC52C-EB23-4F8A-98C4-5F14651904B0}|Brain_API\\Brain_API.csproj|solutionrelative:brain_api\\dto\\gettotalsalarydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{96B5D952-4C55-4084-B62D-C216379151D4}|Brain_DAL\\Brain_DAL.csproj|d:\\brain\\brain_of_company\\brain_of_company\\brain_of_company_solution\\brain_dal\\repo\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96B5D952-4C55-4084-B62D-C216379151D4}|Brain_DAL\\Brain_DAL.csproj|solutionrelative:brain_dal\\repo\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DD6DC52C-EB23-4F8A-98C4-5F14651904B0}|Brain_API\\Brain_API.csproj|d:\\brain\\brain_of_company\\brain_of_company\\brain_of_company_solution\\brain_api\\dto\\ratedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD6DC52C-EB23-4F8A-98C4-5F14651904B0}|Brain_API\\Brain_API.csproj|solutionrelative:brain_api\\dto\\ratedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD6DC52C-EB23-4F8A-98C4-5F14651904B0}|Brain_API\\Brain_API.csproj|d:\\brain\\brain_of_company\\brain_of_company\\brain_of_company_solution\\brain_api\\dto\\checkssnisexistvalidationattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD6DC52C-EB23-4F8A-98C4-5F14651904B0}|Brain_API\\Brain_API.csproj|solutionrelative:brain_api\\dto\\checkssnisexistvalidationattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD6DC52C-EB23-4F8A-98C4-5F14651904B0}|Brain_API\\Brain_API.csproj|d:\\brain\\brain_of_company\\brain_of_company\\brain_of_company_solution\\brain_api\\dto\\addemployeedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD6DC52C-EB23-4F8A-98C4-5F14651904B0}|Brain_API\\Brain_API.csproj|solutionrelative:brain_api\\dto\\addemployeedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD6DC52C-EB23-4F8A-98C4-5F14651904B0}|Brain_API\\Brain_API.csproj|d:\\brain\\brain_of_company\\brain_of_company\\brain_of_company_solution\\brain_api\\controllers\\dependentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD6DC52C-EB23-4F8A-98C4-5F14651904B0}|Brain_API\\Brain_API.csproj|solutionrelative:brain_api\\controllers\\dependentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD6DC52C-EB23-4F8A-98C4-5F14651904B0}|Brain_API\\Brain_API.csproj|d:\\brain\\brain_of_company\\brain_of_company\\brain_of_company_solution\\brain_api\\dto\\updatedependentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD6DC52C-EB23-4F8A-98C4-5F14651904B0}|Brain_API\\Brain_API.csproj|solutionrelative:brain_api\\dto\\updatedependentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD6DC52C-EB23-4F8A-98C4-5F14651904B0}|Brain_API\\Brain_API.csproj|d:\\brain\\brain_of_company\\brain_of_company\\brain_of_company_solution\\brain_api\\dto\\updateemployeedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD6DC52C-EB23-4F8A-98C4-5F14651904B0}|Brain_API\\Brain_API.csproj|solutionrelative:brain_api\\dto\\updateemployeedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD6DC52C-EB23-4F8A-98C4-5F14651904B0}|Brain_API\\Brain_API.csproj|d:\\brain\\brain_of_company\\brain_of_company\\brain_of_company_solution\\brain_api\\dto\\showshortdatadependentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD6DC52C-EB23-4F8A-98C4-5F14651904B0}|Brain_API\\Brain_API.csproj|solutionrelative:brain_api\\dto\\showshortdatadependentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD6DC52C-EB23-4F8A-98C4-5F14651904B0}|Brain_API\\Brain_API.csproj|d:\\brain\\brain_of_company\\brain_of_company\\brain_of_company_solution\\brain_api\\dto\\checkisuniquevalidationattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD6DC52C-EB23-4F8A-98C4-5F14651904B0}|Brain_API\\Brain_API.csproj|solutionrelative:brain_api\\dto\\checkisuniquevalidationattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD6DC52C-EB23-4F8A-98C4-5F14651904B0}|Brain_API\\Brain_API.csproj|d:\\brain\\brain_of_company\\brain_of_company\\brain_of_company_solution\\brain_api\\dto\\showshortdataaboutdepartmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD6DC52C-EB23-4F8A-98C4-5F14651904B0}|Brain_API\\Brain_API.csproj|solutionrelative:brain_api\\dto\\showshortdataaboutdepartmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD6DC52C-EB23-4F8A-98C4-5F14651904B0}|Brain_API\\Brain_API.csproj|d:\\brain\\brain_of_company\\brain_of_company\\brain_of_company_solution\\brain_api\\controllers\\apibasecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD6DC52C-EB23-4F8A-98C4-5F14651904B0}|Brain_API\\Brain_API.csproj|solutionrelative:brain_api\\controllers\\apibasecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DD6DC52C-EB23-4F8A-98C4-5F14651904B0}|Brain_API\\Brain_API.csproj|d:\\brain\\brain_of_company\\brain_of_company\\brain_of_company_solution\\brain_api\\dto\\showshortdataaboutemployeedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -59,28 +87,12 @@
       "RelativeMoniker": "D:0:0:{DD6DC52C-EB23-4F8A-98C4-5F14651904B0}|Brain_API\\Brain_API.csproj|solutionrelative:brain_api\\dto\\showalldataaboutemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD6DC52C-EB23-4F8A-98C4-5F14651904B0}|Brain_API\\Brain_API.csproj|d:\\brain\\brain_of_company\\brain_of_company\\brain_of_company_solution\\brain_api\\dto\\updateemployeedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD6DC52C-EB23-4F8A-98C4-5F14651904B0}|Brain_API\\Brain_API.csproj|solutionrelative:brain_api\\dto\\updateemployeedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DD6DC52C-EB23-4F8A-98C4-5F14651904B0}|Brain_API\\Brain_API.csproj|d:\\brain\\brain_of_company\\brain_of_company\\brain_of_company_solution\\brain_api\\dto\\checkidofdepartmentexistvalidationattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DD6DC52C-EB23-4F8A-98C4-5F14651904B0}|Brain_API\\Brain_API.csproj|solutionrelative:brain_api\\dto\\checkidofdepartmentexistvalidationattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD6DC52C-EB23-4F8A-98C4-5F14651904B0}|Brain_API\\Brain_API.csproj|d:\\brain\\brain_of_company\\brain_of_company\\brain_of_company_solution\\brain_api\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD6DC52C-EB23-4F8A-98C4-5F14651904B0}|Brain_API\\Brain_API.csproj|solutionrelative:brain_api\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96B5D952-4C55-4084-B62D-C216379151D4}|Brain_DAL\\Brain_DAL.csproj|d:\\brain\\brain_of_company\\brain_of_company\\brain_of_company_solution\\brain_dal\\repo\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96B5D952-4C55-4084-B62D-C216379151D4}|Brain_DAL\\Brain_DAL.csproj|solutionrelative:brain_dal\\repo\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FFE59BA5-DD33-4E81-A53F-B398144165D2}|Brain_Entities\\Brain_Entities.csproj|d:\\brain\\brain_of_company\\brain_of_company\\brain_of_company_solution\\brain_entities\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FFE59BA5-DD33-4E81-A53F-B398144165D2}|Brain_Entities\\Brain_Entities.csproj|solutionrelative:brain_entities\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FFE59BA5-DD33-4E81-A53F-B398144165D2}|Brain_Entities\\Brain_Entities.csproj|d:\\brain\\brain_of_company\\brain_of_company\\brain_of_company_solution\\brain_entities\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FFE59BA5-DD33-4E81-A53F-B398144165D2}|Brain_Entities\\Brain_Entities.csproj|solutionrelative:brain_entities\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DD6DC52C-EB23-4F8A-98C4-5F14651904B0}|Brain_API\\Brain_API.csproj|d:\\brain\\brain_of_company\\brain_of_company\\brain_of_company_solution\\brain_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -102,10 +114,6 @@
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/./Brain_Of_Company/True/SqlTable/dbo.Department.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD6DC52C-EB23-4F8A-98C4-5F14651904B0}|Brain_API\\Brain_API.csproj|d:\\brain\\brain_of_company\\brain_of_company\\brain_of_company_solution\\brain_api\\dto\\addemployeedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD6DC52C-EB23-4F8A-98C4-5F14651904B0}|Brain_API\\Brain_API.csproj|solutionrelative:brain_api\\dto\\addemployeedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DD6DC52C-EB23-4F8A-98C4-5F14651904B0}|Brain_API\\Brain_API.csproj|d:\\brain\\brain_of_company\\brain_of_company\\brain_of_company_solution\\brain_api\\dto\\adddepartmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DD6DC52C-EB23-4F8A-98C4-5F14651904B0}|Brain_API\\Brain_API.csproj|solutionrelative:brain_api\\dto\\adddepartmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -122,10 +130,6 @@
       "RelativeMoniker": "D:0:0:{FFE59BA5-DD33-4E81-A53F-B398144165D2}|Brain_Entities\\Brain_Entities.csproj|solutionrelative:brain_entities\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD6DC52C-EB23-4F8A-98C4-5F14651904B0}|Brain_API\\Brain_API.csproj|d:\\brain\\brain_of_company\\brain_of_company\\brain_of_company_solution\\brain_api\\dto\\showshortdatadependentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD6DC52C-EB23-4F8A-98C4-5F14651904B0}|Brain_API\\Brain_API.csproj|solutionrelative:brain_api\\dto\\showshortdatadependentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DD6DC52C-EB23-4F8A-98C4-5F14651904B0}|Brain_API\\Brain_API.csproj|d:\\brain\\brain_of_company\\brain_of_company\\brain_of_company_solution\\brain_api\\softdeleteofemployeemiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DD6DC52C-EB23-4F8A-98C4-5F14651904B0}|Brain_API\\Brain_API.csproj|solutionrelative:brain_api\\softdeleteofemployeemiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -137,24 +141,35 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
+              "Title": "ShowDependentOfEmployeeDTO.cs",
+              "DocumentMoniker": "D:\\Brain\\Brain_Of_Company\\Brain_Of_Company\\Brain_Of_Company_Solution\\Brain_API\\DTO\\ShowDependentOfEmployeeDTO.cs",
+              "RelativeDocumentMoniker": "Brain_API\\DTO\\ShowDependentOfEmployeeDTO.cs",
+              "ToolTip": "D:\\Brain\\Brain_Of_Company\\Brain_Of_Company\\Brain_Of_Company_Solution\\Brain_API\\DTO\\ShowDependentOfEmployeeDTO.cs",
+              "RelativeToolTip": "Brain_API\\DTO\\ShowDependentOfEmployeeDTO.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAA1wAsAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-02T14:58:23.221Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "UpdateDependentDTO.cs",
               "DocumentMoniker": "D:\\Brain\\Brain_Of_Company\\Brain_Of_Company\\Brain_Of_Company_Solution\\Brain_API\\DTO\\UpdateDependentDTO.cs",
               "RelativeDocumentMoniker": "Brain_API\\DTO\\UpdateDependentDTO.cs",
               "ToolTip": "D:\\Brain\\Brain_Of_Company\\Brain_Of_Company\\Brain_Of_Company_Solution\\Brain_API\\DTO\\UpdateDependentDTO.cs",
               "RelativeToolTip": "Brain_API\\DTO\\UpdateDependentDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-01T16:19:52.986Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-01T16:19:52.986Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 27,
               "Title": "dbo.Department.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/./Brain_Of_Company/True/SqlTable/dbo.Department.sql",
               "ToolTip": "ViewDataWindow_MSSQL__/./Brain_Of_Company/True/SqlTable/dbo.Department.sql",
@@ -163,7 +178,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 26,
               "Title": "DepartmentConfigure.cs",
               "DocumentMoniker": "D:\\Brain\\Brain_Of_Company\\Brain_Of_Company\\Brain_Of_Company_Solution\\Brain_DAL\\Data\\configure\\DepartmentConfigure.cs",
               "RelativeDocumentMoniker": "Brain_DAL\\Data\\configure\\DepartmentConfigure.cs",
@@ -175,7 +190,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 10,
               "Title": "CheckSSNISExistValidationAttribute.cs",
               "DocumentMoniker": "D:\\Brain\\Brain_Of_Company\\Brain_Of_Company\\Brain_Of_Company_Solution\\Brain_API\\DTO\\CheckSSNISExistValidationAttribute.cs",
               "RelativeDocumentMoniker": "Brain_API\\DTO\\CheckSSNISExistValidationAttribute.cs",
@@ -183,12 +198,11 @@
               "RelativeToolTip": "Brain_API\\DTO\\CheckSSNISExistValidationAttribute.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-31T19:25:31.19Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-31T19:25:31.19Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 22,
               "Title": "Department.cs",
               "DocumentMoniker": "D:\\Brain\\Brain_Of_Company\\Brain_Of_Company\\Brain_Of_Company_Solution\\Brain_Entities\\Models\\Department.cs",
               "RelativeDocumentMoniker": "Brain_Entities\\Models\\Department.cs",
@@ -200,7 +214,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 24,
               "Title": "ShowAllDataAboutDepartmentDTO.cs",
               "DocumentMoniker": "D:\\Brain\\Brain_Of_Company\\Brain_Of_Company\\Brain_Of_Company_Solution\\Brain_API\\DTO\\ShowAllDataAboutDepartmentDTO.cs",
               "RelativeDocumentMoniker": "Brain_API\\DTO\\ShowAllDataAboutDepartmentDTO.cs",
@@ -212,7 +226,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "GetTotalSalaryDTO.cs",
               "DocumentMoniker": "D:\\Brain\\Brain_Of_Company\\Brain_Of_Company\\Brain_Of_Company_Solution\\Brain_API\\DTO\\GetTotalSalaryDTO.cs",
               "RelativeDocumentMoniker": "Brain_API\\DTO\\GetTotalSalaryDTO.cs",
@@ -220,12 +234,11 @@
               "RelativeToolTip": "Brain_API\\DTO\\GetTotalSalaryDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-31T19:02:36.193Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-31T19:02:36.193Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "RateDTO.cs",
               "DocumentMoniker": "D:\\Brain\\Brain_Of_Company\\Brain_Of_Company\\Brain_Of_Company_Solution\\Brain_API\\DTO\\RateDTO.cs",
               "RelativeDocumentMoniker": "Brain_API\\DTO\\RateDTO.cs",
@@ -233,38 +246,36 @@
               "RelativeToolTip": "Brain_API\\DTO\\RateDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-31T16:24:50.328Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-31T16:24:50.328Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 7,
               "Title": "ShowShortDataAttendanceDTO.cs",
               "DocumentMoniker": "D:\\Brain\\Brain_Of_Company\\Brain_Of_Company\\Brain_Of_Company_Solution\\Brain_API\\DTO\\ShowShortDataAttendanceDTO.cs",
               "RelativeDocumentMoniker": "Brain_API\\DTO\\ShowShortDataAttendanceDTO.cs",
               "ToolTip": "D:\\Brain\\Brain_Of_Company\\Brain_Of_Company\\Brain_Of_Company_Solution\\Brain_API\\DTO\\ShowShortDataAttendanceDTO.cs",
               "RelativeToolTip": "Brain_API\\DTO\\ShowShortDataAttendanceDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-31T14:55:39.566Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-31T14:55:39.566Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 0,
               "Title": "AttendanceController.cs",
               "DocumentMoniker": "D:\\Brain\\Brain_Of_Company\\Brain_Of_Company\\Brain_Of_Company_Solution\\Brain_API\\Controllers\\AttendanceController.cs",
               "RelativeDocumentMoniker": "Brain_API\\Controllers\\AttendanceController.cs",
               "ToolTip": "D:\\Brain\\Brain_Of_Company\\Brain_Of_Company\\Brain_Of_Company_Solution\\Brain_API\\Controllers\\AttendanceController.cs",
               "RelativeToolTip": "Brain_API\\Controllers\\AttendanceController.cs",
-              "ViewState": "AgIAAEAAAAAAAAAAAAAgwE8AAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAKoAAAAAAAAAAAApwK8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-31T14:47:16.768Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 29,
               "Title": "ShowAllDataDependentDTO.cs",
               "DocumentMoniker": "D:\\Brain\\Brain_Of_Company\\Brain_Of_Company\\Brain_Of_Company_Solution\\Brain_API\\DTO\\ShowAllDataDependentDTO.cs",
               "RelativeDocumentMoniker": "Brain_API\\DTO\\ShowAllDataDependentDTO.cs",
@@ -276,7 +287,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 15,
               "Title": "ShowShortDataDependentDTO.cs",
               "DocumentMoniker": "D:\\Brain\\Brain_Of_Company\\Brain_Of_Company\\Brain_Of_Company_Solution\\Brain_API\\DTO\\ShowShortDataDependentDTO.cs",
               "RelativeDocumentMoniker": "Brain_API\\DTO\\ShowShortDataDependentDTO.cs",
@@ -288,20 +299,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 12,
               "Title": "DependentController.cs",
               "DocumentMoniker": "D:\\Brain\\Brain_Of_Company\\Brain_Of_Company\\Brain_Of_Company_Solution\\Brain_API\\Controllers\\DependentController.cs",
               "RelativeDocumentMoniker": "Brain_API\\Controllers\\DependentController.cs",
               "ToolTip": "D:\\Brain\\Brain_Of_Company\\Brain_Of_Company\\Brain_Of_Company_Solution\\Brain_API\\Controllers\\DependentController.cs",
               "RelativeToolTip": "Brain_API\\Controllers\\DependentController.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAA3wD8AAABLAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwD8AAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-31T12:18:33.005Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-31T12:18:33.005Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 21,
               "Title": "CheckIdOfDepartmentExistValidationAttribute.cs",
               "DocumentMoniker": "D:\\Brain\\Brain_Of_Company\\Brain_Of_Company\\Brain_Of_Company_Solution\\Brain_API\\DTO\\CheckIdOfDepartmentExistValidationAttribute.cs",
               "RelativeDocumentMoniker": "Brain_API\\DTO\\CheckIdOfDepartmentExistValidationAttribute.cs",
@@ -309,12 +319,11 @@
               "RelativeToolTip": "Brain_API\\DTO\\CheckIdOfDepartmentExistValidationAttribute.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-31T08:30:34.352Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-31T08:30:34.352Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 28,
               "Title": "AddDepartmentDTO.cs",
               "DocumentMoniker": "D:\\Brain\\Brain_Of_Company\\Brain_Of_Company\\Brain_Of_Company_Solution\\Brain_API\\DTO\\AddDepartmentDTO.cs",
               "RelativeDocumentMoniker": "Brain_API\\DTO\\AddDepartmentDTO.cs",
@@ -327,7 +336,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 17,
               "Title": "ShowShortDataAboutDepartmentDTO.cs",
               "DocumentMoniker": "D:\\Brain\\Brain_Of_Company\\Brain_Of_Company\\Brain_Of_Company_Solution\\Brain_API\\DTO\\ShowShortDataAboutDepartmentDTO.cs",
               "RelativeDocumentMoniker": "Brain_API\\DTO\\ShowShortDataAboutDepartmentDTO.cs",
@@ -335,37 +344,36 @@
               "RelativeToolTip": "Brain_API\\DTO\\ShowShortDataAboutDepartmentDTO.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAuwAoAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-31T06:43:25.54Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-31T06:43:25.54Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 1,
               "Title": "DepartmentController.cs",
               "DocumentMoniker": "D:\\Brain\\Brain_Of_Company\\Brain_Of_Company\\Brain_Of_Company_Solution\\Brain_API\\Controllers\\DepartmentController.cs",
               "RelativeDocumentMoniker": "Brain_API\\Controllers\\DepartmentController.cs",
               "ToolTip": "D:\\Brain\\Brain_Of_Company\\Brain_Of_Company\\Brain_Of_Company_Solution\\Brain_API\\Controllers\\DepartmentController.cs",
               "RelativeToolTip": "Brain_API\\Controllers\\DepartmentController.cs",
-              "ViewState": "AgIAAEsAAAAAAAAAAAA0wHsAAABFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHsAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-31T06:39:16.267Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 11,
               "Title": "AddEmployeeDTO.cs",
               "DocumentMoniker": "D:\\Brain\\Brain_Of_Company\\Brain_Of_Company\\Brain_Of_Company_Solution\\Brain_API\\DTO\\AddEmployeeDTO.cs",
               "RelativeDocumentMoniker": "Brain_API\\DTO\\AddEmployeeDTO.cs",
               "ToolTip": "D:\\Brain\\Brain_Of_Company\\Brain_Of_Company\\Brain_Of_Company_Solution\\Brain_API\\DTO\\AddEmployeeDTO.cs",
               "RelativeToolTip": "Brain_API\\DTO\\AddEmployeeDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAUAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-31T06:27:05.421Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 30,
               "Title": "EmployeeConfigure.cs",
               "DocumentMoniker": "D:\\Brain\\Brain_Of_Company\\Brain_Of_Company\\Brain_Of_Company_Solution\\Brain_DAL\\Data\\configure\\EmployeeConfigure.cs",
               "RelativeDocumentMoniker": "Brain_DAL\\Data\\configure\\EmployeeConfigure.cs",
@@ -377,7 +385,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 31,
               "Title": "Employee.cs",
               "DocumentMoniker": "D:\\Brain\\Brain_Of_Company\\Brain_Of_Company\\Brain_Of_Company_Solution\\Brain_Entities\\Models\\Employee.cs",
               "RelativeDocumentMoniker": "Brain_Entities\\Models\\Employee.cs",
@@ -389,7 +397,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 32,
               "Title": "SoftDeleteOfEmployeeMiddleWare.cs",
               "DocumentMoniker": "D:\\Brain\\Brain_Of_Company\\Brain_Of_Company\\Brain_Of_Company_Solution\\Brain_API\\SoftDeleteOfEmployeeMiddleWare.cs",
               "RelativeDocumentMoniker": "Brain_API\\SoftDeleteOfEmployeeMiddleWare.cs",
@@ -401,7 +409,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 16,
               "Title": "CheckIsUniqueValidationAttribute.cs",
               "DocumentMoniker": "D:\\Brain\\Brain_Of_Company\\Brain_Of_Company\\Brain_Of_Company_Solution\\Brain_API\\DTO\\CheckIsUniqueValidationAttribute.cs",
               "RelativeDocumentMoniker": "Brain_API\\DTO\\CheckIsUniqueValidationAttribute.cs",
@@ -409,8 +417,7 @@
               "RelativeToolTip": "Brain_API\\DTO\\CheckIsUniqueValidationAttribute.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAwwBcAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-30T18:26:07.263Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-30T18:26:07.263Z"
             },
             {
               "$type": "Document",
@@ -422,12 +429,11 @@
               "RelativeToolTip": "Brain_API\\DTO\\UpdateEmployeeDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-30T18:13:51.604Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-30T18:13:51.604Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 19,
               "Title": "ShowShortDataAboutEmployeeDTO.cs",
               "DocumentMoniker": "D:\\Brain\\Brain_Of_Company\\Brain_Of_Company\\Brain_Of_Company_Solution\\Brain_API\\DTO\\ShowShortDataAboutEmployeeDTO.cs",
               "RelativeDocumentMoniker": "Brain_API\\DTO\\ShowShortDataAboutEmployeeDTO.cs",
@@ -435,12 +441,11 @@
               "RelativeToolTip": "Brain_API\\DTO\\ShowShortDataAboutEmployeeDTO.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAA0wA4AAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-30T16:32:51.975Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-30T16:32:51.975Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 20,
               "Title": "ShowAllDataAboutEmployee.cs",
               "DocumentMoniker": "D:\\Brain\\Brain_Of_Company\\Brain_Of_Company\\Brain_Of_Company_Solution\\Brain_API\\DTO\\ShowAllDataAboutEmployee.cs",
               "RelativeDocumentMoniker": "Brain_API\\DTO\\ShowAllDataAboutEmployee.cs",
@@ -448,49 +453,50 @@
               "RelativeToolTip": "Brain_API\\DTO\\ShowAllDataAboutEmployee.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAEwBIAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-30T16:12:08.871Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-30T16:12:08.871Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 5,
               "Title": "IRepository.cs",
               "DocumentMoniker": "D:\\Brain\\Brain_Of_Company\\Brain_Of_Company\\Brain_Of_Company_Solution\\Brain_Entities\\interfaces\\IRepository.cs",
               "RelativeDocumentMoniker": "Brain_Entities\\interfaces\\IRepository.cs",
               "ToolTip": "D:\\Brain\\Brain_Of_Company\\Brain_Of_Company\\Brain_Of_Company_Solution\\Brain_Entities\\interfaces\\IRepository.cs",
               "RelativeToolTip": "Brain_Entities\\interfaces\\IRepository.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAcwA0AAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAuwBYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-30T15:29:35.899Z"
+              "WhenOpened": "2025-01-30T15:29:35.899Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 3,
               "Title": "UnitOfWork.cs",
               "DocumentMoniker": "D:\\Brain\\Brain_Of_Company\\Brain_Of_Company\\Brain_Of_Company_Solution\\Brain_DAL\\Repo\\UnitOfWork.cs",
               "RelativeDocumentMoniker": "Brain_DAL\\Repo\\UnitOfWork.cs",
               "ToolTip": "D:\\Brain\\Brain_Of_Company\\Brain_Of_Company\\Brain_Of_Company_Solution\\Brain_DAL\\Repo\\UnitOfWork.cs",
               "RelativeToolTip": "Brain_DAL\\Repo\\UnitOfWork.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAwwCkAAAA1AAAAAAAAAA==",
+              "ViewState": "AgIAACYAAAAAAAAAAAAwwC4AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-30T06:54:55.934Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 4,
               "Title": "Repository.cs",
               "DocumentMoniker": "D:\\Brain\\Brain_Of_Company\\Brain_Of_Company\\Brain_Of_Company_Solution\\Brain_DAL\\Repo\\Repository.cs",
               "RelativeDocumentMoniker": "Brain_DAL\\Repo\\Repository.cs",
               "ToolTip": "D:\\Brain\\Brain_Of_Company\\Brain_Of_Company\\Brain_Of_Company_Solution\\Brain_DAL\\Repo\\Repository.cs",
               "RelativeToolTip": "Brain_DAL\\Repo\\Repository.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAA6wCQAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAADkBAAAAAAAAAADwv0UBAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-30T06:51:50.474Z"
+              "WhenOpened": "2025-01-30T06:51:50.474Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 25,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Brain\\Brain_Of_Company\\Brain_Of_Company\\Brain_Of_Company_Solution\\Brain_API\\Program.cs",
               "RelativeDocumentMoniker": "Brain_API\\Program.cs",
@@ -502,7 +508,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 23,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\Brain\\Brain_Of_Company\\Brain_Of_Company\\Brain_Of_Company_Solution\\Brain_API\\appsettings.json",
               "RelativeDocumentMoniker": "Brain_API\\appsettings.json",
@@ -514,7 +520,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 18,
               "Title": "APIBaseController.cs",
               "DocumentMoniker": "D:\\Brain\\Brain_Of_Company\\Brain_Of_Company\\Brain_Of_Company_Solution\\Brain_API\\Controllers\\APIBaseController.cs",
               "RelativeDocumentMoniker": "Brain_API\\Controllers\\APIBaseController.cs",
@@ -522,18 +528,17 @@
               "RelativeToolTip": "Brain_API\\Controllers\\APIBaseController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-30T06:15:51.314Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-30T06:15:51.314Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
               "Title": "EmployeeController.cs",
               "DocumentMoniker": "D:\\Brain\\Brain_Of_Company\\Brain_Of_Company\\Brain_Of_Company_Solution\\Brain_API\\Controllers\\EmployeeController.cs",
               "RelativeDocumentMoniker": "Brain_API\\Controllers\\EmployeeController.cs",
               "ToolTip": "D:\\Brain\\Brain_Of_Company\\Brain_Of_Company\\Brain_Of_Company_Solution\\Brain_API\\Controllers\\EmployeeController.cs",
               "RelativeToolTip": "Brain_API\\Controllers\\EmployeeController.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAA1wGMAAABFAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAA3wF8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-30T06:14:12.584Z",
               "EditorCaption": ""

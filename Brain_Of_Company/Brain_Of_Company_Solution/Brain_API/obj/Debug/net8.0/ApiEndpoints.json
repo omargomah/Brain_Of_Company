@@ -67,7 +67,70 @@
     "Parameters": [
       {
         "Name": "date",
-        "Type": "System.DateOnly",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Brain_API.Controllers.AttendanceController",
+    "Method": "GetAttendanceByEmployeeSSN",
+    "RelativePath": "api/Attendance/GetAttendanceByEmployeeSSN",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "SSN",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Brain_API.Controllers.AttendanceController",
+    "Method": "GetAttendanceByEmployeeSSNInRangeOfDays",
+    "RelativePath": "api/Attendance/GetAttendanceByEmployeeSSNInRangeOfDays",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "SSN",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "startDate",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "endDate",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Brain_API.Controllers.AttendanceController",
+    "Method": "GetAttendanceByEmployeeSSNInSpecificDay",
+    "RelativePath": "api/Attendance/GetAttendanceByEmployeeSSNInSpecificDay",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "SSN",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Date",
+        "Type": "System.DateTime",
         "IsRequired": false
       }
     ],
@@ -333,6 +396,22 @@
   },
   {
     "ContainingType": "Brain_API.Controllers.EmployeeController",
+    "Method": "GetDependentsEmployeeBySSN",
+    "RelativePath": "api/Employee/GetDependentsEmployeeBySSN",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "SSN",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Brain_API.Controllers.EmployeeController",
     "Method": "GetOneEmployee",
     "RelativePath": "api/Employee/GetEmployeeBySSN",
     "HttpMethod": "GET",
@@ -381,8 +460,8 @@
         "IsRequired": false
       },
       {
-        "Name": "StartDate",
-        "Type": "System.DateOnly",
+        "Name": "startDate",
+        "Type": "System.DateTime",
         "IsRequired": false
       }
     ],
@@ -397,8 +476,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "StartDate",
-        "Type": "System.DateOnly",
+        "Name": "startDate",
+        "Type": "System.DateTime",
         "IsRequired": false
       }
     ],

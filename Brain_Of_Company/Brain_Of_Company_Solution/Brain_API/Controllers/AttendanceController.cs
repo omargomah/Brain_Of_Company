@@ -3,7 +3,9 @@ using Brain_Entities.Models;
 using Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.IdentityModel.Tokens;
 using System.Linq;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Brain_API.Controllers
 {
@@ -122,18 +124,67 @@ namespace Brain_API.Controllers
         }
 
         [HttpGet("GetAttendanceByDate")]
-        public async Task<IActionResult> GetAttendanceByDate(DateOnly date)
+        public async Task<IActionResult> GetAttendanceByDate(DateTime date)
         {
-            var attendances = await _unitOfWork.Attendances.GetAttendanceWithEmployeesByDate(date);
+            var attendances = await _unitOfWork.Attendances.GetAttendanceWithEmployeesByDate(DateOnly.FromDateTime(date));
+            //var attendances =  _unitOfWork.Attendances.GetAll().Where(x=> DateOnly.FromDateTime(x.DateOfDay).CompareTo(dateOnly) == 0);
             if (attendances is null)
                 return NotFound("invalid Date");
-                List<ShowShortDataAttendanceDTO> showShortData = attendances.Select(x => new ShowShortDataAttendanceDTO()
+            List<ShowShortDataAttendanceDTO> showShortData = attendances.Select(x => new ShowShortDataAttendanceDTO()
                 {
                     Id = x.Id,
                     DateOfDay = x.DateOfDay,
                     EmployeeSSN = x.EmployeeSSN,
                     IsAttended = x.IsAttended
                 }).ToList();
+            return Ok(showShortData);
+        }
+
+        [HttpGet("GetAttendanceByEmployeeSSN")]
+        public async Task<IActionResult> GetAttendanceByEmployeeSSN(string SSN)
+        {
+            var attendances = await _unitOfWork.Attendances.GetAttendanceByEmployeesSSN(SSN);
+            List<HelpShowAttendanceDTO> showShortData = attendances.Select(x => new HelpShowAttendanceDTO()
+            {
+                Id = x.Id,
+                DateOfDay = x.DateOfDay,
+                IsAttended = x.IsAttended
+            }).ToList();
+            return Ok(showShortData);
+        }
+
+        [HttpGet("GetAttendanceByEmployeeSSNInSpecificDay")]
+        public async Task<IActionResult> GetAttendanceByEmployeeSSNInSpecificDay(string SSN , DateTime Date)
+        {
+            Attendance? attendance = null;
+            DateOnly date = DateOnly.FromDateTime(Date);
+            if (SSN.Length == 14 && DateOnly.FromDateTime(DateTime.Now).CompareTo(date)>=0)
+                attendance =  _unitOfWork.Attendances.GetAttendanceByEmployeesSSNInSpecificDay(SSN,date);
+            if(attendance is null)
+                return NotFound("the date or SSN in Valid");
+            ShowShortDataAttendanceDTO showShortData = new ShowShortDataAttendanceDTO()
+            {
+                Id = attendance .Id,
+                DateOfDay = attendance .DateOfDay,
+                IsAttended = attendance.IsAttended,
+                EmployeeSSN = attendance .EmployeeSSN
+            };
+            return Ok(showShortData);
+        }
+        [HttpGet("GetAttendanceByEmployeeSSNInRangeOfDays")]
+        public async Task<IActionResult> GetAttendanceByEmployeeSSNInRangeOfDays(string SSN, DateTime startDate , DateTime endDate)
+        {
+            List<Attendance>? attendances = null;
+            if (SSN.Length == 14 && DateTime.Now.CompareTo(endDate) >= 0 && startDate.CompareTo(endDate) <= 0)
+                attendances = await _unitOfWork.Attendances.GetAttendanceByEmployeesSSNInRange(SSN, DateOnly.FromDateTime(startDate), DateOnly.FromDateTime(endDate));
+            if (attendances.IsNullOrEmpty())
+                return NotFound("the Range of date or SSN is inValid");
+            List<HelpShowAttendanceDTO> showShortData = attendances.Select(x=> new HelpShowAttendanceDTO()
+            {
+                Id = x.Id,
+                DateOfDay = x.DateOfDay,
+                IsAttended = x.IsAttended,
+            }).ToList();
             return Ok(showShortData);
         }
         [HttpPost]

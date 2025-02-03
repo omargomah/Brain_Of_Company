@@ -21,8 +21,6 @@ namespace DAL
         {
             _context = context;
         }
-        public  Task<List<Attendance>> GetAttendanceWithEmployeesByDate(DateOnly date)
-            => _context.Attendance.Where(x => DateOnly.FromDateTime(x.DateOfDay).CompareTo(date) == 0 ).ToListAsync();
         public Attendance? GetAttendanceWithEmployeesById(int id)
             => _context.Attendance.Where(x => x.Id == id).Include(x=>x.Employee).FirstOrDefault();
         public Dependent? GetDependentWithEmployeesById(int id) 
@@ -298,7 +296,35 @@ namespace DAL
             return _context.Set<T>().OrderByDescending(orderBy).FirstOrDefault(criteria);
         }
 
-       
+        //Task<List<Attendance>> IRepository<T>.GetAttendanceByEmployeesSSN(string SSN)
+        //{
+        //    throw new NotImplementedException();
+        //}
+
+        //Task<List<Attendance>> IRepository<T>.GetAttendanceByEmployeesSSNInRange(string SSN, DateOnly startDate, DateOnly endDate)
+        //{
+        //    throw new NotImplementedException();
+        //}
+
+        //Attendance? IRepository<T>.GetAttendanceByEmployeesSSNInSpecificDay(string SSN, DateOnly date)
+        //{
+        //    throw new NotImplementedException();
+        //}
+
+        //IEnumerable<Dependent_Employee> IRepository<T>.GetAllDependentEmployeeWithDependentBySSN(string SSN)
+        //{
+        //    throw new NotImplementedException();
+        //}
+        public Task <List<Attendance>> GetAttendanceByEmployeesSSN(string SSN)
+            => _context.Attendance.Where(x=>x.EmployeeSSN == SSN).ToListAsync();
+        public Task<List<Attendance>> GetAttendanceByEmployeesSSNInRange(string SSN , DateOnly startDate , DateOnly endDate)
+            => _context.Attendance.Where(x=>x.EmployeeSSN == SSN && DateOnly.FromDateTime(x.DateOfDay).CompareTo(startDate)>=0 && DateOnly.FromDateTime(x.DateOfDay).CompareTo(endDate) <= 0).ToListAsync();
+        public Attendance? GetAttendanceByEmployeesSSNInSpecificDay(string SSN, DateOnly date)
+            => _context.Attendance.FirstOrDefault(x => DateOnly.FromDateTime(x.DateOfDay).CompareTo(date) == 0 && x.EmployeeSSN == SSN);
+        public IEnumerable<Dependent_Employee> GetAllDependentEmployeeWithDependentBySSN(string SSN)
+            => _context.Dependent_Employee.Where(x=>x.EmployeeSSN.Equals(SSN)).Include(x=>x.Dependent);
+        public Task<List<Attendance>> GetAttendanceWithEmployeesByDate(DateOnly date)
+            => _context.Attendance.Where(x => DateOnly.FromDateTime(x.DateOfDay).CompareTo(date) == 0 ).ToListAsync();
     }
 }
 

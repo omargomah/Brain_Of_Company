@@ -11,16 +11,22 @@ namespace Interfaces
 {
     public interface IRepository<T> where T : class
     {
-        public List<Department> GetAllDepartmentWithEmployeeAndManager();
+        List<Department> GetAllDepartmentWithEmployeeAndManager();
+        Task<List<Attendance>> GetAttendanceByEmployeesSSN(string SSN);
+        Task<List<Attendance>> GetAttendanceByEmployeesSSNInRange(string SSN, DateOnly startDate, DateOnly endDate);
+        Attendance? GetAttendanceByEmployeesSSNInSpecificDay(string SSN , DateOnly date);
+
         T GetById(int id);
         Dependent? GetDependentWithEmployeesById(int id);
         Attendance? GetAttendanceWithEmployeesById(int id);
         Task<List<Attendance>>? GetAttendanceWithEmployeesByDate(DateOnly date);
+
         Task<T> GetByIdAsync(int id);
         public Department? GetDepartmentWithEmployeeByDEPIdAsync(int id);
         Task<T> GetByCompositeAsync(params object[] keys);
         Task<T> GetByNameAsync(string name);
         IEnumerable<T> GetAll();
+        IEnumerable<Dependent_Employee> GetAllDependentEmployeeWithDependentBySSN(string SSN);
         Task<IEnumerable<T>> GetAllAsync();
         public List<string> GetDistinct(Expression<Func<T, string>> col);
         T Find(Expression<Func<T, bool>> criteria, string[] includes = null);
