@@ -233,13 +233,19 @@ namespace Brain_API.Controllers
         {
             if (ModelState.IsValid)
             {
-                Employee employee  = _unitOfWork.Employees.GetAll().First(x=>x.SSN == UpdateEmployeeDTO.SSN);
+                if(UpdateEmployeeDTO.OldSSN.CompareTo(UpdateEmployeeDTO.NewSSN) !=0)
+                {
+                    Employee employee1 = await _unitOfWork.Employees.GetBySSNAsync(UpdateEmployeeDTO.NewSSN);
+                    if (employee1 is not null)
+                        return BadRequest("the new SSN you enter used by another employee");
+                }
+                Employee employee  = await _unitOfWork.Employees.GetBySSNAsync(UpdateEmployeeDTO.OldSSN);
                 employee.Email = UpdateEmployeeDTO.Email;
                 employee.DepartmentId = UpdateEmployeeDTO.DepartmentId;
                 employee.Gender = UpdateEmployeeDTO.Gender;
                 employee.Name = UpdateEmployeeDTO.Name;
                 employee.Phone = UpdateEmployeeDTO.Phone;
-                employee.SSN = UpdateEmployeeDTO.SSN;
+                employee.SSN = UpdateEmployeeDTO.NewSSN;
                 employee.City = UpdateEmployeeDTO.City;
                 employee.Country = UpdateEmployeeDTO.Country;
                 employee.DateOfBirth = UpdateEmployeeDTO.DateOfBirth;

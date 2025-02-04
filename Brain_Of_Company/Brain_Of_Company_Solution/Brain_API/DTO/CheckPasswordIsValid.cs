@@ -1,11 +1,9 @@
-﻿using Brain_Entities.Models;
-using Interfaces;
+﻿using Interfaces;
 using System.ComponentModel.DataAnnotations;
 
 namespace Brain_API.DTO
 {
-    internal class CheckSSNISExistValidationAttribute<T> : ValidationAttribute
-        where T : class
+    internal class CheckPasswordIsValid : ValidationAttribute
     {
         protected override ValidationResult? IsValid(object? value, ValidationContext validationContext)
         {
@@ -14,9 +12,11 @@ namespace Brain_API.DTO
             IUnitOfWork? unitOfWork = validationContext.GetService<IUnitOfWork>();
             if (unitOfWork is null)
                 return new ValidationResult("the Service can't provide");
-            if (typeof(T) == typeof(Employee) && unitOfWork.Employees.IsEmployeeExistBySSN(value.ToString()))
+            if (unitOfWork.Employees.IsEmployeeExistBySSN(value.ToString()))
                     return ValidationResult.Success;
-            if (typeof(T) == typeof(Admin) && unitOfWork.Admins.IsAdminExistBySSN(value.ToString()))
+         
+            // not completed
+            if (unitOfWork.Admins.IsAdminExistBySSN(value.ToString()))
                     return ValidationResult.Success;
             return new ValidationResult("the SSN Invalid");
         }

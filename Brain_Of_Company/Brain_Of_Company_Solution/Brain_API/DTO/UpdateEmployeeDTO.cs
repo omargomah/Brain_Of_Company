@@ -8,6 +8,9 @@ namespace Brain_API.DTO
         [Required]
         [CheckSSNISExistValidation<Employee>]
         [Length(minimumLength:14 ,maximumLength: 14 , ErrorMessage = "the length must be 14")]
-        public string SSN { get; set; }
+        public string OldSSN { get; set; }
+        [Required]
+        [Length(minimumLength:14 ,maximumLength: 14 , ErrorMessage = "the length must be 14")]
+        public string NewSSN { get; set; }
     }
 }

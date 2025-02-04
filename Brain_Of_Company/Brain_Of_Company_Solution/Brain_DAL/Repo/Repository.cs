@@ -23,6 +23,8 @@ namespace DAL
         }
         //public  Task<List<Attendance>> GetAttendanceWithEmployeesByDate(DateOnly date)
         //    => _context.Attendance.Where(x => DateOnly.FromDateTime(x.DateOfDay).CompareTo(date) == 0 ).ToListAsync();
+        public Task<List<Admin>> GetAllAdminWithEmployeeAsync()=>_context.Admin.Include(x=>x.Employee).ToListAsync();
+        
         public Attendance? GetAttendanceWithEmployeesById(int id)
             => _context.Attendance.Where(x => x.Id == id).Include(x=>x.Employee).FirstOrDefault();
         public Dependent? GetDependentWithEmployeesById(int id) 
@@ -51,8 +53,8 @@ namespace DAL
         {
             return await _context.Set<T>().FirstOrDefaultAsync(e => EF.Property<string>(e, "Name") == name);
         }
-        public async Task<Employee?> GetBySSNAsync(string SSN)
-            => await _context.Employees.FirstOrDefaultAsync(e => e.SSN == SSN);
+        public async Task<T?> GetBySSNAsync(string SSN)
+            => await _context.Set<T>().FirstOrDefaultAsync(e => EF.Property<string>(e, "SSN") == SSN);
         public T GetById(int id)
         {
             return _context.Set<T>().Find(id);
@@ -293,6 +295,7 @@ namespace DAL
             return _context.Set<T>().Any(criteria);
         }
         public bool IsEmployeeExistBySSN(string SSN) =>  _context.Set<Employee>().Any(e=>string.Equals(e.SSN ,SSN) && e.IsDeleted == false);
+        public bool IsAdminExistBySSN(string SSN) => _context.Set<Admin>().Any(e => string.Equals(e.SSN, SSN));
         public T Last(Expression<Func<T, bool>> criteria, Expression<Func<T, object>> orderBy)
         {
             return _context.Set<T>().OrderByDescending(orderBy).FirstOrDefault(criteria);
@@ -308,7 +311,6 @@ namespace DAL
         public Task<List<Attendance>> GetAttendanceWithEmployeesByDate(DateOnly date)
             => _context.Attendance.Where(x => DateOnly.FromDateTime(x.DateOfDay).CompareTo(date) == 0).ToListAsync();
 
-        public bool IsAdminExistBySSN(string SSN) => _context.Set<Admin>().Any(e => string.Equals(e.SSN, SSN));
     }
 }
 

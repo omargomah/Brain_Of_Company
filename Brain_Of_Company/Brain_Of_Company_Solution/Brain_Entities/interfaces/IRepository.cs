@@ -71,7 +71,7 @@ namespace Interfaces
         T Last(Expression<Func<T, bool>> criteria, Expression<Func<T, object>> orderBy);
         bool IsEmployeeExistBySSN(string SSN);
         bool IsAdminExistBySSN(string SSN);
-        public Task<Employee?> GetBySSNAsync(string SSN);
-
+        Task<T?> GetBySSNAsync(string SSN);
+        Task<List<Admin>> GetAllAdminWithEmployeeAsync();
     }
 }
