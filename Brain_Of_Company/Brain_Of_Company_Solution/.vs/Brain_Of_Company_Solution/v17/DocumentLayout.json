@@ -165,8 +165,7 @@
               "RelativeToolTip": "Brain_DAL\\Migrations\\20250203151337_NameAdded.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T15:13:37.902Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-03T15:13:37.902Z"
             },
             {
               "$type": "Document",
@@ -202,8 +201,7 @@
               "RelativeToolTip": "Brain_API\\DTO\\UpdateDependentDTO.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAIwA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-01T16:19:52.986Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-01T16:19:52.986Z"
             },
             {
               "$type": "Document",
@@ -320,8 +318,7 @@
               "RelativeToolTip": "Brain_API\\Controllers\\AttendanceController.cs",
               "ViewState": "AgIAAJgAAAAAAAAAAAAIwKUAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-31T14:47:16.768Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-31T14:47:16.768Z"
             },
             {
               "$type": "Document",
@@ -381,8 +378,7 @@
               "RelativeToolTip": "Brain_API\\DTO\\AddDepartmentDTO.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAQwBsAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-31T08:29:21.788Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-31T08:29:21.788Z"
             },
             {
               "$type": "Document",
@@ -406,8 +402,7 @@
               "RelativeToolTip": "Brain_API\\Controllers\\DepartmentController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAHsAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-31T06:39:16.267Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-31T06:39:16.267Z"
             },
             {
               "$type": "Document",
@@ -503,8 +498,7 @@
               "RelativeToolTip": "Brain_Entities\\interfaces\\IRepository.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAxwBgAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-30T15:29:35.899Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-30T15:29:35.899Z"
             },
             {
               "$type": "Document",
@@ -528,8 +522,7 @@
               "RelativeToolTip": "Brain_DAL\\Repo\\Repository.cs",
               "ViewState": "AgIAACgBAAAAAAAAAAAAACsBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-30T06:51:50.474Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-30T06:51:50.474Z"
             },
             {
               "$type": "Document",
@@ -565,8 +558,7 @@
               "RelativeToolTip": "Brain_API\\Controllers\\APIBaseController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-30T06:15:51.314Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-30T06:15:51.314Z"
             },
             {
               "$type": "Document",
@@ -576,7 +568,7 @@
               "RelativeDocumentMoniker": "Brain_API\\Controllers\\EmployeeController.cs",
               "ToolTip": "D:\\Brain\\Brain_Of_Company\\Brain_Of_Company\\Brain_Of_Company_Solution\\Brain_API\\Controllers\\EmployeeController.cs",
               "RelativeToolTip": "Brain_API\\Controllers\\EmployeeController.cs",
-              "ViewState": "AgIAAG4AAAAAAAAAAAAAAG4AAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAG4AAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-30T06:14:12.584Z",
               "EditorCaption": ""
