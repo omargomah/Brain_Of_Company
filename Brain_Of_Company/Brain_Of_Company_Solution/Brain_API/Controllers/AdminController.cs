@@ -6,15 +6,23 @@ using DAL;
 using Brain_DAL.Migrations;
 using Brain_API.DTO;
 using Brain_Entities.Models;
+using Brain_API.Services;
+using BCrypt.Net;
 
 namespace Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    
     public class AdminController : APIBaseController
     {
-        public AdminController(IUnitOfWork unitOfWork) : base(unitOfWork) {}
+        private JwtService jwt;
+        public AdminController(IUnitOfWork unitOfWork,JwtService jwt) : base(unitOfWork) 
+        {
+            this.jwt = jwt;
+        }
         [HttpPost]
+        [Authorize]
         public async Task<IActionResult> AddAdmin(AddAdminDTO addAdminDTO)
         {
             if(ModelState.IsValid)
@@ -22,7 +30,7 @@ namespace Controllers
                 Admin admin = new Admin() 
                 {
                     SSN = addAdminDTO.SSN,
-                    Password = addAdminDTO.Password
+                    Password = BCrypt.Net.BCrypt.HashPassword(addAdminDTO.Password)
                 };
                 await _unitOfWork.Admins.AddAsync(admin);
                 _unitOfWork.Save();
@@ -31,6 +39,7 @@ namespace Controllers
             return BadRequest(ModelState.Values.Select(x=>x.Errors));
         }
         [HttpDelete]
+        [Authorize]
         public async Task<IActionResult> DeleteAdmin(string SSN)
         {
             var admin = _unitOfWork.Admins.GetAll().FirstOrDefault(x => x.SSN == SSN);
@@ -41,6 +50,7 @@ namespace Controllers
             return Ok("delete admin success");
         }
         [HttpPut]
+        [Authorize]
         public async Task<IActionResult> UpdateAdmin(UpdateAdminDTO updateAdminDTO)
         {
             if (ModelState.IsValid)
@@ -52,10 +62,10 @@ namespace Controllers
                         return BadRequest("the new SSN is exist already in admin");
                 }
                 var admin = _unitOfWork.Admins.GetAll().FirstOrDefault(x => x.SSN == updateAdminDTO.OldSSN);
-                if (updateAdminDTO.OldPassword.CompareTo(admin.Password) != 0)
+                if(!BCrypt.Net.BCrypt.Verify(updateAdminDTO.OldPassword, admin.Password))
                     return BadRequest("the old Password incorrect");
                 admin.SSN = updateAdminDTO.NewSSN;
-                admin.Password = updateAdminDTO.NewPassword;
+                admin.Password = BCrypt.Net.BCrypt.HashPassword(updateAdminDTO.NewPassword);
                 _unitOfWork.Admins.Update(admin);
                 _unitOfWork.Save();
                 return Ok("update admin success");
@@ -63,6 +73,7 @@ namespace Controllers
             return BadRequest(ModelState.Values.Select(x=>x.Errors));
         }
         [HttpGet("GetAll")]
+        [Authorize]
         public async Task<IActionResult> GetAllAdmin()
         {
             var admins = await _unitOfWork.Admins.GetAllAdminWithEmployeeAsync();
@@ -76,6 +87,22 @@ namespace Controllers
                 Phone = x.Employee.Phone
             }).ToList();
             return Ok(showShortData);
+        }
+        [HttpPost("Login")]
+        public async Task<IActionResult> LoginAndTokenAsync(LoginDTO loginDto)
+        {
+            Admin admin = await _unitOfWork.Admins.FindAsync(u => u.SSN == loginDto.SSN);
+            if (admin == null)
+                return BadRequest("Username or Password is incorrect");
+            bool isPasswordValid = BCrypt.Net.BCrypt.Verify(loginDto.Password, admin.Password);
+
+            if (!isPasswordValid)
+                return BadRequest("Username or Password is incorrect");
+            return Ok(new
+            {
+                token = jwt.GenerateJSONWebToken(admin),
+                expiration = DateTime.UtcNow.AddHours(8)
+            });
         }
     }
 }

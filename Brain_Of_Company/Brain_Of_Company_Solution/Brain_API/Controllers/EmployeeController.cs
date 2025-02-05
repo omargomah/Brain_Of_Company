@@ -4,10 +4,12 @@ using Interfaces;
 using Brain_API.DTO;
 using Brain_Entities.Models;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.AspNetCore.Authorization;
 namespace Brain_API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class EmployeeController : APIBaseController
     {
         public EmployeeController(IUnitOfWork unitOfWork) : base(unitOfWork) {}
@@ -24,7 +26,7 @@ namespace Brain_API.Controllers
                 Phone = x.Phone,
                 SSN = x.SSN
             }).ToList();
-            return Ok(employees);
+            return Ok(showShortData);
         }
 
         [HttpGet("GetRateOfHiring")]
@@ -272,6 +274,12 @@ namespace Brain_API.Controllers
                 department.ManagerSSN = null;
                 _unitOfWork.Departments.Update(department);
             }
+            Admin admin = await _unitOfWork.Admins.GetBySSNAsync(SSN);
+            if(admin is not null)
+            {
+                _unitOfWork.Admins.Delete(admin);
+                _unitOfWork.Save();
+            }
             var dependent_Employees = _unitOfWork.Dependent_Employees.GetAll().Where(x=>x.EmployeeSSN == employee.SSN);
             _unitOfWork.Dependent_Employees.DeleteRange(dependent_Employees);
             _unitOfWork.Save();
@@ -281,6 +289,5 @@ namespace Brain_API.Controllers
             _unitOfWork.Save();
             return Ok("Delete done");
         }
-        
     }
 }

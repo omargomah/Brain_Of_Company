@@ -15,7 +15,6 @@ namespace Brain_API.DTO
         public string NewSSN { get; set; }
         [Required]
         [MaxLength(50)]
-        [CheckPasswordIsValid]
         public string OldPassword { get; set; }
         [Required]
         [MaxLength(50)]

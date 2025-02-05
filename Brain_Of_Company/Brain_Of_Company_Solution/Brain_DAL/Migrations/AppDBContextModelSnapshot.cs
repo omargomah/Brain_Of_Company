@@ -31,7 +31,7 @@ namespace Brain_DAL.Migrations
 
                     b.Property<string>("Password")
                         .IsRequired()
-                        .HasMaxLength(50)
+                        .HasMaxLength(255)
                         .HasColumnType("varchar")
                         .HasColumnName("Password");
 
@@ -344,7 +344,7 @@ namespace Brain_DAL.Migrations
                     b.HasOne("Brain_Entities.Models.Employee", "Employee")
                         .WithOne("Admin")
                         .HasForeignKey("Brain_Entities.Models.Admin", "SSN")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.Navigation("Employee");

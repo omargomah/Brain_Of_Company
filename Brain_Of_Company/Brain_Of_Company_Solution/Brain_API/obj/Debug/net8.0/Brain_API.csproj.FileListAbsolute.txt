@@ -446,3 +446,5 @@ D:\ProjectsWebBack\EEEE\Brain_Of_Company\Brain_Of_Company\Brain_Of_Company_Solut
 D:\ProjectsWebBack\EEEE\Brain_Of_Company\Brain_Of_Company\Brain_Of_Company_Solution\Brain_API\obj\Debug\net8.0\Brain_API.csproj.Up2Date
 D:\ProjectsWebBack\EEEE\Brain_Of_Company\Brain_Of_Company\Brain_Of_Company_Solution\Brain_API\obj\Debug\net8.0\Brain_API.genruntimeconfig.cache
 D:\ProjectsWebBack\EEEE\Brain_Of_Company\Brain_Of_Company\Brain_Of_Company_Solution\Brain_API\obj\Debug\net8.0\ref\Brain_API.dll
+D:\ProjectsWebBack\EEEE\Brain_Of_Company\Brain_Of_Company\Brain_Of_Company_Solution\Brain_API\bin\Debug\net8.0\BCrypt.Net.dll
+D:\ProjectsWebBack\EEEE\Brain_Of_Company\Brain_Of_Company\Brain_Of_Company_Solution\Brain_API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

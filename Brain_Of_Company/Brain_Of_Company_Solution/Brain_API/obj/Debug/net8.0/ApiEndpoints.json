@@ -32,6 +32,48 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Controllers.AdminController",
+    "Method": "UpdateAdmin",
+    "RelativePath": "api/Admin",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "updateAdminDTO",
+        "Type": "Brain_API.DTO.UpdateAdminDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Controllers.AdminController",
+    "Method": "GetAllAdmin",
+    "RelativePath": "api/Admin/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Controllers.AdminController",
+    "Method": "LoginAndTokenAsync",
+    "RelativePath": "api/Admin/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginDto",
+        "Type": "Brain_API.DTO.LoginDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Brain_API.Controllers.AttendanceController",
     "Method": "AddAttendance",
     "RelativePath": "api/Attendance",

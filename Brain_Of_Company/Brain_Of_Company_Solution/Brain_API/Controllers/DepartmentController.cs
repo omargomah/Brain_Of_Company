@@ -1,6 +1,7 @@
 ﻿using Brain_API.DTO;
 using Brain_Entities.Models;
 using Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -10,6 +11,7 @@ namespace Brain_API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class DepartmentController : APIBaseController
     {
         public DepartmentController(IUnitOfWork unitOfWork) : base(unitOfWork) { }

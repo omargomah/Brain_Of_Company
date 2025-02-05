@@ -1,8 +1,8 @@
 {
   "openapi": "3.0.1",
   "info": {
-    "title": "Brain_API",
-    "version": "1.0"
+    "title": "Brain_Of_Company",
+    "version": "v1"
   },
   "paths": {
     "/api/Admin": {
@@ -48,6 +48,78 @@
             }
           }
         ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Admin"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateAdminDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateAdminDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateAdminDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Admin/GetAll": {
+      "get": {
+        "tags": [
+          "Admin"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Admin/Login": {
+      "post": {
+        "tags": [
+          "Admin"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginDTO"
+              }
+            }
+          }
+        },
         "responses": {
           "200": {
             "description": "Success"
@@ -1466,12 +1538,10 @@
             "type": "string"
           },
           "password": {
-            "maxLength": 50,
             "minLength": 1,
             "type": "string"
           },
           "confirmPassword": {
-            "maxLength": 50,
             "minLength": 1,
             "type": "string"
           }
@@ -1725,6 +1795,20 @@
         },
         "additionalProperties": false
       },
+      "LoginDTO": {
+        "type": "object",
+        "properties": {
+          "ssn": {
+            "type": "string",
+            "nullable": true
+          },
+          "password": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "ProductDTO": {
         "required": [
           "categoryId",
@@ -1798,6 +1882,42 @@
         "type": "object",
         "properties": {
           "name": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateAdminDTO": {
+        "required": [
+          "confirmPassword",
+          "newPassword",
+          "newSSN",
+          "oldPassword",
+          "oldSSN"
+        ],
+        "type": "object",
+        "properties": {
+          "oldSSN": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "newSSN": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "oldPassword": {
+            "maxLength": 50,
+            "minLength": 1,
+            "type": "string"
+          },
+          "newPassword": {
+            "maxLength": 50,
+            "minLength": 1,
+            "type": "string"
+          },
+          "confirmPassword": {
+            "maxLength": 50,
             "minLength": 1,
             "type": "string"
           }
@@ -1893,10 +2013,11 @@
           "email",
           "gender",
           "name",
+          "newSSN",
+          "oldSSN",
           "Percentage Of Bonus",
           "phone",
           "Salary Per Day",
-          "ssn",
           "street"
         ],
         "type": "object",
@@ -1953,13 +2074,30 @@
             "minLength": 1,
             "type": "string"
           },
-          "ssn": {
+          "oldSSN": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "newSSN": {
             "minLength": 1,
             "type": "string"
           }
         },
         "additionalProperties": false
       }
+    },
+    "securitySchemes": {
+      "Bearer": {
+        "type": "apiKey",
+        "description": "Please enter into field the word 'Bearer' followed by a space and the JWT value",
+        "name": "Authorization",
+        "in": "header"
+      }
     }
-  }
+  },
+  "security": [
+    {
+      "Bearer": [ ]
+    }
+  ]
 }

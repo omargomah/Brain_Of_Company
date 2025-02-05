@@ -16,8 +16,8 @@ namespace Brain_DAL.Data.configure
         {
             builder.HasKey(x => x.SSN);
             builder.Property(x => x.SSN).HasColumnName("SSN").HasMaxLength(14).HasColumnType("varchar").IsRequired(true);
-            builder.Property(x => x.Password).HasColumnName("Password").HasMaxLength(50).HasColumnType("varchar").IsRequired(true);
-            builder.HasOne(x => x.Employee).WithOne( x => x.Admin).HasForeignKey<Admin>( x => x.SSN).OnDelete(DeleteBehavior.Cascade);
+            builder.Property(x => x.Password).HasColumnName("Password").HasMaxLength(255).HasColumnType("varchar").IsRequired(true);
+            builder.HasOne(x => x.Employee).WithOne( x => x.Admin).HasForeignKey<Admin>( x => x.SSN).OnDelete(DeleteBehavior.NoAction);
         }
     }
 }

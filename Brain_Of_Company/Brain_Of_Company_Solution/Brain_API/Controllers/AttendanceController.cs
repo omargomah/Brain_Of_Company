@@ -1,6 +1,7 @@
 ﻿using Brain_API.DTO;
 using Brain_Entities.Models;
 using Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
@@ -10,6 +11,7 @@ namespace Brain_API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class AttendanceController : APIBaseController
     {
         public AttendanceController(IUnitOfWork unitOfWork) : base(unitOfWork) { }

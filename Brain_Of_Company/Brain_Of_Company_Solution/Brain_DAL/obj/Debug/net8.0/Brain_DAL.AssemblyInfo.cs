@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Brain_DAL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+06058dc85210e537f88f67d7f1e10b95612137c6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e242b2cb518b97e53d88640999c93a55a22fcc83")]
 [assembly: System.Reflection.AssemblyProductAttribute("Brain_DAL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Brain_DAL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

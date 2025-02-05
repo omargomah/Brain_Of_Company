@@ -1,12 +1,14 @@
 ﻿using Brain_API.DTO;
 using Brain_Entities.Models;
 using Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Brain_API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class EmployeeDependantController : APIBaseController
     {
         public EmployeeDependantController(IUnitOfWork unitOfWork) : base(unitOfWork) { }
@@ -45,14 +47,16 @@ namespace Brain_API.Controllers
         [HttpPut("EditDependent")]
         public async Task<IActionResult> EditDependent(EmployeeDependentDTO dependentDTO)
         {
-            var dependent = await _unitOfWork.Dependent_Employees.FindAsync(x => x.DependentId == dependentDTO.DependentId && x.EmployeeSSN == dependentDTO.EmployeeSSN);
-            if (dependent != null)
+            var dependent = _unitOfWork.Dependent_Employees.GetAll().FirstOrDefault(x => x.EmployeeSSN == dependentDTO.EmployeeSSN);
+            if (dependent is not null)
             {
                 dependent.DependentId = dependentDTO.DependentId;
-                dependent.EmployeeSSN = dependentDTO.EmployeeSSN;
-
-                _unitOfWork.Save();
-                return Ok("Updated");
+              int check = _unitOfWork.Save();
+                if (check == 0)
+                {
+                    return Ok("Updated");
+                }
+                return BadRequest("Invalid SSN or DependentId");
             }
             return BadRequest("Invalid Dependent Id or Employee SSN");
         }
@@ -60,13 +64,16 @@ namespace Brain_API.Controllers
         [HttpPost("AddDependent")]
         public async Task<IActionResult> AddDependent(EmployeeDependentDTO dependentDTO)
         {
-            var dependent = new Dependent_Employee()
+
+            Dependent_Employee? dependent_EmployeeToCheckExist = _unitOfWork.Dependent_Employees.GetAll().FirstOrDefault(x => x.DependentId == dependentDTO.DependentId && x.EmployeeSSN == dependentDTO.EmployeeSSN);
+            if (dependent_EmployeeToCheckExist is not null)
+                return BadRequest("this employee has this dependent already");
+            Dependent_Employee dependent_Employee = new Dependent_Employee()
             {
                 DependentId = dependentDTO.DependentId,
                 EmployeeSSN = dependentDTO.EmployeeSSN
             };
-
-            await _unitOfWork.Dependent_Employees.AddAsync(dependent);
+            await _unitOfWork.Dependent_Employees.AddAsync(dependent_Employee);
             int success = _unitOfWork.Save();
             if (success != 0)
             {
@@ -79,7 +86,7 @@ namespace Brain_API.Controllers
         public async Task<IActionResult> DeleteDependent(int dependentId, string employeeSSN)
         {
             var dependent = await _unitOfWork.Dependent_Employees.FindAsync(x => x.DependentId == dependentId && x.EmployeeSSN == employeeSSN);
-            if (dependent != null)
+            if (dependent is not null)
             {
                 _unitOfWork.Dependent_Employees.Delete(dependent);
                 _unitOfWork.Save();
