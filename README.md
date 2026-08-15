@@ -113,9 +113,3 @@ dotnet ef database update --project Brain_DAL --startup-project Brain_API
 dotnet run --project Brain_API
 
 ```
-
-
-
-```
-
-```
